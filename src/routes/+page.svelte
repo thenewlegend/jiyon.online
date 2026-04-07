@@ -10,69 +10,11 @@
   import Reveal from "$lib/components/motion/Reveal.svelte";
   import Stagger from "$lib/components/motion/Stagger.svelte";
   import BlogCard from "$lib/components/sections/BlogCard.svelte";
+  import Carousel from "$lib/components/layout/Carousel.svelte";
+  import { experience } from "$lib/config/experience";
+  import { projects } from "$lib/config/project";
 
   let { data } = $props();
-
-  const projects = [
-    {
-      id: "p1",
-      title: "Structural Optimization of Robotic Arm",
-      date: "2025",
-      context:
-        "Increased payload requirements for a 6-axis industrial robot without resizing existing motors.",
-      solution:
-        "Re-engineered the elbow joint using topology optimization and carbon fiber-reinforced composites.",
-      impact: "Reduced weight by 22% while increasing stiffness by 15%.",
-      tools: ["SolidWorks", "ANSYS", "FEA", "Composite Design"],
-    },
-    {
-      id: "p2",
-      title: "Precision Heat Exchanger for EV Batteries",
-      date: "2024",
-      context:
-        "Battery thermal management system failing during rapid charging cycles in high-ambient temperatures.",
-      solution:
-        "Designed a micro-channel cold plate using additive manufacturing to maximize surface area-to-volume ratio.",
-      impact: "Maintained battery temp 8°C lower during 30min charge cycles.",
-      tools: ["CFD", "DFAM", "Thermal Analysis", "GD&T"],
-    },
-    {
-      id: "p3",
-      title: "Automated Micro-Assembly Mechanism",
-      date: "2024",
-      context:
-        "Manual tiny-component assembly resulting in a 12% defect rate and high labor costs.",
-      solution:
-        "Developed a high-precision flexure-based gripper system with integrated piezo-actuators for sub-micron control.",
-      impact: "Defect rate dropped to 0.4%, throughput increased by 300%.",
-      tools: ["Precision Design", "Mechanism Design", "Mechatronics"],
-    },
-  ];
-
-  const experience = [
-    {
-      id: "e1",
-      role: "Senior Design Engineer",
-      company: "Precision Dynamics Systems",
-      duration: "2023 — Present",
-      achievements: [
-        "Lead mechanical architect for high-speed manufacturing lines serving the aerospace industry.",
-        "Conceptualized and executed over 15 successful DFM/DFA initiatives, reducing assembly costs by 20%.",
-        "Directly managed a team of 4 junior engineers through full product lifecycle (NPI).",
-      ],
-    },
-    {
-      id: "e2",
-      role: "Mechanical Engineer",
-      company: "NextGen Mobility Labs",
-      duration: "2020 — 2023",
-      achievements: [
-        "Developed structural components for autonomous vehicle prototypes using aluminum casting and CNC machining.",
-        "Automated quality inspection reports using custom Python scripts integrated with SolidWorks API.",
-        "Recipient of the 2021 Engineering Excellence Award for battery safety enclosure design.",
-      ],
-    },
-  ];
 </script>
 
 <svelte:head>
@@ -159,13 +101,13 @@
         </div>
       </Reveal>
 
-      <Stagger stagger={0.2}>
-        <Grid cols={{ base: 1, lg: 3 }} gap="gap-4">
+      <Carousel>
+        <Stagger stagger={0.2} class="flex gap-6">
           {#each projects as project}
             <MEProjectCard {project} />
           {/each}
-        </Grid>
-      </Stagger>
+        </Stagger>
+      </Carousel>
     </Container>
   </Section>
 
@@ -203,13 +145,13 @@
           </div>
         </Reveal>
 
-        <Stagger stagger={0.2}>
-          <div class="border-t border-[var(--color-base-muted)]/10">
+        <Carousel>
+          <Stagger stagger={0.1} class="flex gap-6">
             {#each data.posts as post}
               <BlogCard {post} />
             {/each}
-          </div>
-        </Stagger>
+          </Stagger>
+        </Carousel>
       </div>
     </Container>
   </Section>

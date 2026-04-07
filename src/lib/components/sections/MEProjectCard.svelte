@@ -18,7 +18,7 @@
 </script>
 
 <article
-  class="p-6 lg:p-8 border border-[var(--color-base-muted)]/20 bg-[var(--color-base-dark)] hover:border-[var(--color-accent)]/40 transition-colors duration-500 group flex flex-col h-full rounded-sm"
+  class="shrink-0 snap-start w-[300px] lg:w-[450px] p-6 lg:p-8 border border-[var(--color-base-muted)]/20 bg-[var(--color-base-dark)] hover:border-[var(--color-accent)]/40 transition-colors duration-500 group flex flex-col h-full rounded-sm"
 >
   <div class="mb-6 lg:mb-8 flex justify-between items-start">
     <div class="space-y-1">

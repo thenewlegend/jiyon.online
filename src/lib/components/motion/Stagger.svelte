@@ -5,10 +5,12 @@
   let { 
     stagger = 0.15, 
     delay = 0, 
+    class: className = '',
     children 
   } = $props<{
     stagger?: number;
     delay?: number;
+    class?: string;
     children?: any;
   }>();
 
@@ -22,6 +24,6 @@
   });
 </script>
 
-<div bind:this={container} class="stagger-container">
+<div bind:this={container} class="stagger-container {className}">
   {@render children?.()}
 </div>
