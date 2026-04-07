@@ -11,12 +11,18 @@
   import ResumeSection from '$lib/components/resume/ResumeSection.svelte';
   import ResumeItem from '$lib/components/resume/ResumeItem.svelte';
   import SkillGroup from '$lib/components/resume/SkillGroup.svelte';
+  import ResumeDownloadModal from '$lib/components/resume/ResumeDownloadModal.svelte';
 
   // Import raw data configuration to keep UI logic clean
   import { RESUME_DATA } from '$lib/config/resume';
 
   // State Management for Capabilities
   let openIndices = $state<number[]>([]);
+  let isDownloadModalOpen = $state(false);
+
+  function toggleDownloadModal() {
+    isDownloadModalOpen = !isDownloadModalOpen;
+  }
 
   function toggleGroup(index: number) {
     if (openIndices.includes(index)) {
@@ -56,11 +62,16 @@
 <div class="fixed bottom-8 right-8 z-50">
   <Button 
     label="Download PDF" 
-    href="/Jiyon Resume.pdf" 
+    onClick={() => isDownloadModalOpen = true}
     variant="primary" 
     class="shadow-lg shadow-[var(--color-accent)]/20 shadow-xl border border-[var(--color-accent)]/50 backdrop-blur-md" 
   />
 </div>
+
+<ResumeDownloadModal 
+  isOpen={isDownloadModalOpen} 
+  onClose={() => isDownloadModalOpen = false} 
+/>
 
 <Section class="pt-32 pb-24 min-h-screen relative">
   <!-- Blueprint Background -->
