@@ -22,7 +22,6 @@
   <!-- Responsive Hero Image Layer -->
   <div class="absolute inset-0 z-0">
     <HydrogenParticles />
-    <div class="absolute inset-0 bg-linear-to-b from-[var(--color-base-dark)]/80 to-[var(--color-base-dark)]"></div>
   </div>
 
   <Container class="relative z-10">
