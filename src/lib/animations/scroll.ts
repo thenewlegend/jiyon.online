@@ -17,7 +17,7 @@ export function fadeUp({ element, config }: AnimationParams) {
     ease: 'power3.out',
     scrollTrigger: {
       trigger: element,
-      start: 'top 90%',
+      start: 'top 95%',
       once: true
     }
   });
@@ -33,7 +33,7 @@ export function fadeIn({ element, config }: AnimationParams) {
     ease: 'power2.out',
     scrollTrigger: {
       trigger: element,
-      start: 'top 85%',
+      start: 'top 95%',
       
       once: true
     }
@@ -51,7 +51,7 @@ export function scaleIn({ element, config }: AnimationParams) {
     ease: 'expo.out',
     scrollTrigger: {
       trigger: element,
-      start: 'top 85%',
+      start: 'top 95%',
       
       once: true
     }
@@ -70,8 +70,7 @@ export function staggerChildren(parent: HTMLElement, childSelector: string, conf
     ease: 'power2.out',
     scrollTrigger: {
       trigger: parent,
-      start: 'top 80%',
-      
+      start: 'top 95%',
       once: true
     }
   });

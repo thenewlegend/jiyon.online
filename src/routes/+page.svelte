@@ -171,11 +171,11 @@
         </Reveal>
 
         <Carousel>
-          <Stagger stagger={0.1} class="flex gap-6">
+          <div class="flex gap-6">
             {#each data.posts as post}
               <BlogCard {post} />
             {/each}
-          </Stagger>
+          </div>
         </Carousel>
       </div>
     </Container>
