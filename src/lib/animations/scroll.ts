@@ -17,7 +17,7 @@ export function fadeUp({ element, config }: AnimationParams) {
     ease: 'power3.out',
     scrollTrigger: {
       trigger: element,
-      start: 'top 85%',
+      start: 'top 90%',
       toggleActions: 'play none none reverse',
       once: false
     }
