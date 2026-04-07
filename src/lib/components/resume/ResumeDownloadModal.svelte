@@ -57,9 +57,9 @@
 <Modal {isOpen} {onClose}>
   <div class="space-y-8">
     <div class="text-center space-y-2">
-      <Heading level={3} text="Select Your Path" class="text-2xl lg:text-3xl" />
+      <Heading level={3} text="CHOOSE ONE" class="text-2xl lg:text-3xl" />
       <Text
-        text="Customize the profile you'd like to explore based on your evaluation needs."
+        text="Select the profile you'd like to explore."
         class="text-xs uppercase tracking-widest text-[var(--color-base-muted)]"
       />
     </div>
@@ -97,7 +97,7 @@
       <p
         class="text-[9px] uppercase tracking-[0.3em] text-[var(--color-base-muted)] opacity-50"
       >
-        Optimized for ATS & Manual Engineering Review
+        Forthcoming exchange is anticipated with interest.
       </p>
     </div>
   </div>
