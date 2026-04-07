@@ -1,42 +1,38 @@
-# sv
+```yaml
+project:
+  name: "JIYON P J Portfolio"
+  description: "Primary professional portfolio & resume for JIYON P J — Mechanical Engineer specializing in AI and automation."
+  version: "1.0.0"
+  repository: "https://github.com/thenewlegend/jiyon.online"
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+tech_stack:
+  framework: "SvelteKit"
+  language: "TypeScript"
+  styling: "Tailwind CSS"
+  animations: "GSAP (Core, ScrollTrigger)"
+  build_target: "Static Site Generation (SSG) / Adapter Auto"
 
-## Creating a project
+architecture:
+  pattern: "Component-driven Declarative UI"
+  state_management: "Props / Svelte Reactivity"
+  directories:
+    src/lib/components:
+      layout: "Structural grids and sections"
+      ui: "Atomic elements (Buttons, Headings)"
+      sections: "Page composite segments (Hero, Experience, Blog)"
+      motion: "GSAP wrappers (Reveal, Stagger)"
+      resume: "Dedicated layout structures for the resume page"
+    src/lib/config: "Headless data stores (experience, projects, resume data)"
+    src/routes: "SvelteKit file-based routes (+page.svelte)"
 
-If you're seeing this, you've probably already done this step. Congrats!
+design_philosophy:
+  theme: "Engineering aesthetic (High-contrast Dark Mode)"
+  responsiveness: "Mobile-first approach"
+  motion: "Determinisitc, scroll-driven reveal micro-interactions"
+  maintainability: "Data cleanly separated from presentation logic"
 
-```sh
-# create a new project
-npx sv create my-app
+scripts:
+  development: "npm run dev"
+  build: "npm run build"
+  preview: "npm run preview"
 ```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.14.1 create --template minimal --types ts --no-install .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
