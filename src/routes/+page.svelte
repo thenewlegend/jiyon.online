@@ -93,7 +93,7 @@
   <!-- PROJECTS SECTION -->
   <Section id="projects">
     <Container>
-      <Reveal animation="fade-in" class="mb-16">
+      <Reveal animation="fade-in" class="mb-10">
         <div class="space-y-4">
           <Heading level={2} text="Featured Projects" />
           <Text
@@ -120,8 +120,8 @@
   >
     <Container>
       <div class="max-w-4xl">
-        <div style="margin-top: 2rem;">
-          <Reveal animation="fade-in" class="mb-16">
+        <div>
+          <Reveal animation="fade-in" class="mb-10">
             <Heading level={2} text="Education" />
           </Reveal>
 
@@ -129,11 +129,10 @@
             <EducationCard item={education[0]} isCurrent={true} />
           </Reveal>
 
-          <Reveal animation="fade-in" delay={0.2} class="mt-8">
+          <Reveal animation="fade-in" delay={0.2}>
             <a
               href="/resume#education"
-              class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group"
-              style="margin-top: 2rem;"
+              class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group mt-8 lg:mt-12"
             >
               <span
                 class="border-b border-transparent group-hover:border-current transition-colors"
@@ -155,8 +154,8 @@
           </Reveal>
         </div>
 
-        <div style="margin-top: 2rem;">
-          <Reveal animation="fade-in" class="mb-16">
+        <div class="mt-16 lg:mt-24">
+          <Reveal animation="fade-in" class="mb-10">
             <Heading level={2} text="Work Experience" />
           </Reveal>
 
@@ -164,11 +163,10 @@
             <ExperienceCard item={experience[0]} isCurrent={true} />
           </Reveal>
 
-          <Reveal animation="fade-in" delay={0.2} class="mt-8">
+          <Reveal animation="fade-in" delay={0.2}>
             <a
               href="/resume#experience"
-              class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group"
-              style="margin-top: 2rem;"
+              class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group mt-8 lg:mt-12"
             >
               <span
                 class="border-b border-transparent group-hover:border-current transition-colors"

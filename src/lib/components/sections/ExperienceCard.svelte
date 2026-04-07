@@ -16,7 +16,7 @@
 </script>
 
 <div
-  class="relative pl-8 border-l border-[var(--color-base-muted)]/20 pb-8 lg:pb-12 last:pb-0"
+  class="relative pl-8 border-l border-[var(--color-base-muted)]/20 pb-6 lg:pb-10 last:pb-0"
 >
   <div
     class="absolute left-[-1.5px] top-2 w-[4px] h-[4px] bg-[var(--color-accent)] rounded-full"

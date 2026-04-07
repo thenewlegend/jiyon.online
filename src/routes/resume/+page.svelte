@@ -77,7 +77,7 @@
   onClose={() => (isDownloadModalOpen = false)}
 />
 
-<Section class="pt-32 pb-24 min-h-screen relative">
+<Section class="pt-20 lg:pt-32 pb-16 min-h-screen relative">
   <!-- Blueprint Background -->
   <div
     class="fixed inset-0 bg-[linear-gradient(to_right,#88888812_1px,transparent_1px),linear-gradient(to_bottom,#88888812_1px,transparent_1px)] bg-[size:3rem_3rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"
@@ -86,7 +86,7 @@
   <Container class="relative z-10 max-w-5xl">
     <!-- Header Block -->
     <header
-      class="mb-24 space-y-8 border-b border-[var(--color-base-muted)]/20 pb-12"
+      class="mb-16 space-y-8 border-b border-[var(--color-base-muted)]/20 pb-12"
     >
       <Reveal animation="fade-in">
         <Heading
@@ -97,25 +97,24 @@
         <h2
           class="text-xl lg:text-3xl font-light text-[var(--color-accent)] mb-8"
         >
-          {RESUME_DATA.professionalTitle.primary} —
-          <span class="opacity-70 text-[var(--color-base-muted)]"
-            >{RESUME_DATA.professionalTitle.specialization}</span
+          {RESUME_DATA.professionalTitle.primary}<span
+            class="opacity-70 text-[var(--color-base-muted)]"
+          >
+            &nbsp;- {RESUME_DATA.professionalTitle.specialization}</span
           >
         </h2>
 
         <div
           class="flex flex-wrap gap-x-8 gap-y-4 text-sm font-mono tracking-wider text-[var(--color-base-muted)] opacity-80 border-l border-[var(--color-accent)] pl-6"
         >
-          <span>{RESUME_DATA.personalInformation.location}</span>
-          <span class="opacity-30">|</span>
+          <a href="https://maps.app.goo.gl/f4VzmuvEgqvitaGeA" target="_blank">
+            <span>{RESUME_DATA.personalInformation.location}</span>
+          </a>
           <a
             href={"mailto:" + RESUME_DATA.personalInformation.email}
             class="hover:text-[var(--color-accent)] transition-colors"
             >{RESUME_DATA.personalInformation.email}</a
           >
-          <span class="opacity-30">|</span>
-          <span>{RESUME_DATA.personalInformation.phone}</span>
-          <div class="basis-full h-0"></div>
           <a
             href={"https://" + RESUME_DATA.personalInformation.links.linkedin}
             target="_blank"
@@ -132,7 +131,7 @@
       </Reveal>
     </header>
 
-    <div class="space-y-16 lg:space-y-24">
+    <div class="space-y-8 lg:space-y-16">
       <!-- Profile Summary -->
       <Reveal>
         <ResumeSection title="Profile">

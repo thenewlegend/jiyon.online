@@ -9,7 +9,7 @@
 <section
   {id}
   style={id ? "scroll-margin-top: 6rem;" : ""}
-  class="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 pb-16 border-b border-[var(--color-base-muted)]/10 last:border-b-0"
+  class="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 pb-10 lg:pb-16 border-b border-[var(--color-base-muted)]/10 last:border-b-0"
 >
   <div>
     <h2
@@ -18,7 +18,7 @@
       {title}
     </h2>
   </div>
-  <div class="space-y-12">
+  <div class="space-y-8 lg:space-y-12">
     {@render children?.()}
   </div>
 </section>
