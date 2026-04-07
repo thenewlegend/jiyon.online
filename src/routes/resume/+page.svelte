@@ -69,7 +69,7 @@
       <!-- Core Capabilities -->
       <Reveal>
         <ResumeSection title="Capabilities">
-          <Stagger stagger={0.08} class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <Stagger stagger={0.08} class="flex flex-wrap gap-3 [&>*]:w-full [&>*]:md:w-[calc(50%-0.375rem)]">
             {#each RESUME_DATA.coreCapabilities as group}
               <SkillGroup category={group.category} skills={group.skills} />
             {/each}
