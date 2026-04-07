@@ -18,7 +18,7 @@ export function fadeUp({ element, config }: AnimationParams) {
     scrollTrigger: {
       trigger: element,
       start: 'top 95%',
-      once: true
+      toggleActions: 'play none none reverse'
     }
   });
 }
@@ -35,7 +35,7 @@ export function fadeIn({ element, config }: AnimationParams) {
       trigger: element,
       start: 'top 95%',
       
-      once: true
+      toggleActions: 'play none none reverse'
     }
   });
 }
@@ -53,7 +53,7 @@ export function scaleIn({ element, config }: AnimationParams) {
       trigger: element,
       start: 'top 95%',
       
-      once: true
+      toggleActions: 'play none none reverse'
     }
   });
 }
@@ -71,7 +71,7 @@ export function staggerChildren(parent: HTMLElement, childSelector: string, conf
     scrollTrigger: {
       trigger: parent,
       start: 'top 95%',
-      once: true
+      toggleActions: 'play none none reverse'
     }
   });
 }
