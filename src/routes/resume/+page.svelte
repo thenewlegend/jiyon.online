@@ -217,14 +217,14 @@
 
       <!-- Additional Information -->
       <Reveal>
-        <ResumeSection title="Information">
+        <ResumeSection title="Additional Information">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ResumeItem
-              title="Certifications"
+              title="Trainings & Certifications"
               details={RESUME_DATA.certifications}
             />
             <ResumeItem
-              title="Details"
+              title="Others"
               details={[
                 `Languages: ${RESUME_DATA.additional.languages}`,
                 `Availability: ${RESUME_DATA.additional.availability}`,

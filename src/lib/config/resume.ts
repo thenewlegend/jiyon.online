@@ -118,7 +118,7 @@ export const RESUME_DATA = {
     "National Workshop on PEM Fuel Cell Components and Automotive Cell-Stack Integration - SERB"
   ],
   additional: {
-    languages: "English (Fluent), Malayalam (Native), Hindi (Conversational)",
+    languages: "English, Malayalam, Hindi",
     availability: "Immediate",
     relocation: "Open",
     driving_license: "Indian (Manual)"
