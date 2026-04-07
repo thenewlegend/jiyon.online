@@ -97,11 +97,12 @@
         <h2
           class="text-xl lg:text-3xl font-light text-[var(--color-accent)] mb-8"
         >
-          {RESUME_DATA.professionalTitle.primary}<span
-            class="opacity-70 text-[var(--color-base-muted)]"
+          {RESUME_DATA.professionalTitle.primary}
+          <p
+            class="text-lg lg:text-2xl opacity-70 text-[var(--color-base-muted)]"
           >
-            &nbsp;- {RESUME_DATA.professionalTitle.specialization}</span
-          >
+            {RESUME_DATA.professionalTitle.specialization}
+          </p>
         </h2>
 
         <div

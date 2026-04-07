@@ -240,17 +240,17 @@
 
         <div class="flex items-center gap-8">
           <a
-            href="mailto:contact@jiyon.com"
+            href="mailto:jiyonpj2501@gmail.com"
             class="text-sm uppercase tracking-wide hover:text-[var(--color-accent)] transition-colors duration-300"
             >Email</a
           >
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/jiyon"
             class="text-sm uppercase tracking-wide hover:text-[var(--color-accent)] transition-colors duration-300"
             >LinkedIn</a
           >
           <a
-            href="https://github.com"
+            href="https://github.com/thenewlegend"
             class="text-sm uppercase tracking-wide hover:text-[var(--color-accent)] transition-colors duration-300"
             >GitHub</a
           >
