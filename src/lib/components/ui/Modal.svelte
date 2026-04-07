@@ -87,11 +87,11 @@
 
       <!-- Close Action -->
       <button 
-        class="absolute top-6 right-6 text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors p-2"
+        class="absolute top-4 right-4 lg:top-6 lg:right-6 text-[var(--color-base-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-accent)]/40 transition-all p-3 rounded-full border border-[var(--color-base-muted)]/20 z-20 cursor-pointer flex items-center justify-center bg-[var(--color-base-dark)]/50 backdrop-blur-md"
         onclick={onClose}
         aria-label="Close Modal"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
   </div>
