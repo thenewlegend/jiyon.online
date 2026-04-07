@@ -157,7 +157,7 @@
   </Section>
 
   <!-- BLOG / WRITING SECTION -->
-  <Section id="blog">
+  <Section id="blog" class="bg-white text-[var(--color-base-dark)]">
     <Container>
       <div class="max-w-4xl mx-auto">
         <Reveal animation="fade-in" class="mb-12">
@@ -165,7 +165,7 @@
             <Heading level={2} text="Engineering Insights" />
             <Text
               text="Notes, observations, and deep dives into the mechanics of physical product development."
-              muted
+              class="opacity-70"
             />
           </div>
         </Reveal>
@@ -173,7 +173,7 @@
         <Carousel>
           <div class="flex gap-6">
             {#each data.posts as post}
-              <BlogCard {post} />
+              <BlogCard {post} lightMode={true} />
             {/each}
           </div>
         </Carousel>
