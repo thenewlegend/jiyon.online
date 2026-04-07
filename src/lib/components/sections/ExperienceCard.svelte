@@ -12,7 +12,7 @@
   let { item } = $props<{ item: Experience }>();
 </script>
 
-<div class="relative pl-8 border-l border-[var(--color-base-muted)]/20 pb-12 last:pb-0">
+<div class="relative pl-8 border-l border-[var(--color-base-muted)]/20 pb-8 lg:pb-12 last:pb-0">
   <div class="absolute left-[-1.5px] top-2 w-[4px] h-[4px] bg-[var(--color-accent)] rounded-full"></div>
   
   <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4 gap-4">
@@ -23,7 +23,7 @@
     <span class="text-xs uppercase tracking-widest text-[var(--color-base-muted)] font-bold">{item.duration}</span>
   </div>
 
-  <ul class="space-y-3">
+  <ul class="space-y-2 lg:space-y-3">
     {#each item.achievements as achievement}
       <li class="flex items-start gap-4">
         <span class="mt-2 w-1 h-[1px] bg-[var(--color-accent)] opacity-40 shrink-0"></span>

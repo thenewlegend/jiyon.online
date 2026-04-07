@@ -26,8 +26,8 @@
   };
 
   const styleMap = {
-    1: 'text-5xl lg:text-8xl font-bold tracking-tighter leading-[1.1]',
-    2: 'text-3xl lg:text-6xl font-bold tracking-tight leading-tight',
+    1: 'text-4xl lg:text-8xl font-bold tracking-tighter leading-[1.1]',
+    2: 'text-2xl lg:text-6xl font-bold tracking-tight leading-tight',
     3: 'text-xl lg:text-3xl font-semibold tracking-tight',
     4: 'text-lg lg:text-xl font-semibold'
   };

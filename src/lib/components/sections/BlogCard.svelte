@@ -16,7 +16,7 @@
 
 <a 
   href={post.link || '#'} 
-  class="group block py-10 border-b border-[var(--color-base-muted)]/10 hover:bg-[var(--color-base-muted)]/5 transition-all duration-500 px-4 -mx-4 rounded-sm"
+  class="group block py-6 lg:py-10 border-b border-[var(--color-base-muted)]/10 hover:bg-[var(--color-base-muted)]/5 transition-all duration-500 px-4 -mx-4 rounded-sm"
 >
   <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
     <div class="space-y-4 max-w-2xl">
