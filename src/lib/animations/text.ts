@@ -1,4 +1,4 @@
-import gsap from 'gsap';
+import gsap from './core';
 import type { AnimationConfig } from './core';
 
 export function splitText(text: string, type: 'chars' | 'words' = 'words') {
@@ -20,6 +20,12 @@ export function animateText(element: HTMLElement, config?: AnimationConfig) {
     stagger: config?.stagger ?? 0.03,
     duration: config?.duration ?? 0.8,
     ease: 'power3.out',
-    delay: config?.delay ?? 0
+    delay: config?.delay ?? 0,
+    scrollTrigger: {
+      trigger: element,
+      start: 'top 90%',
+      toggleActions: 'play none none reverse',
+      once: false
+    }
   });
 }
