@@ -28,12 +28,12 @@
     <div class="space-y-1">
       <div class="flex items-center gap-3">
         <Heading level={4} text={item.role} class="text-xl lg:text-2xl" />
-        {#if isCurrent}
+        <!-- {#if isCurrent}
           <span
-            class="px-2 py-0.5 rounded bg-[var(--color-accent)]/10 text-[var(--color-accent)] text-[9px] uppercase font-bold tracking-[0.2em] border border-[var(--color-accent)]/20 shadow-[0_0_10px_var(--color-accent)] shadow-[var(--color-accent)]/10"
-            >RECENT</span
+            class="px-2 py-0.5 rounded bg-[var(--color-accent)]/10 text-[var(--color-accent)] text-[7px] uppercase font-bold tracking-[0.2em] border border-[var(--color-accent)]/20 shadow-[0_0_10px_var(--color-accent)] shadow-[var(--color-accent)]/10"
+            >✪</span
           >
-        {/if}
+        {/if} -->
       </div>
       <span class="text-sm font-medium text-[var(--color-base-muted)]"
         >{item.company}</span

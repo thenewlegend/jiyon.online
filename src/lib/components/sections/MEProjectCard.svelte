@@ -62,7 +62,7 @@
         <h4
           class="text-[9px] uppercase font-bold tracking-[0.2em] text-[var(--color-accent)]/80"
         >
-          Mechanical Solution
+          Solution
         </h4>
         <Text text={project.solution} class="text-sm lg:text-base" />
       </div>

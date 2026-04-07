@@ -1,15 +1,14 @@
 export const experience = [
     {
         id: "e1",
-        role: "Senior Design Engineer",
-        company: "Precision Dynamics Systems",
-        duration: "2023 — Present",
-        achievements: [
-            "Lead mechanical architect for high-speed manufacturing lines serving the aerospace industry.",
-            "Conceptualized and executed over 15 successful DFM/DFA initiatives, reducing assembly costs by 20%.",
-            "Directly managed a team of 4 junior engineers through full product lifecycle (NPI).",
-        ],
-    },
+        role: "Project Coordinator",
+        company: "DAZZLE: Designers, Engineers & Contractors",
+        duration: "September 2021 – August 2023",
+        achievements: [],
+    }
+];
+
+/*
     {
         id: "e2",
         role: "Mechanical Engineer",
@@ -21,4 +20,4 @@ export const experience = [
             "Recipient of the 2021 Engineering Excellence Award for battery safety enclosure design.",
         ],
     },
-];
+*/
