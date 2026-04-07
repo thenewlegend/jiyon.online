@@ -73,7 +73,7 @@
 
     <!-- Hamburger Toggle -->
     <button
-      class="flex flex-col gap-1.5 p-2 z-[101] group"
+      class="flex flex-col gap-1.5 p-2 z-[101] group cursor-pointer"
       onclick={toggleMenu}
       aria-label="Toggle Menu"
     >

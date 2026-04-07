@@ -17,8 +17,22 @@
   }>();
 </script>
 
-<Section class="min-h-[70vh] lg:min-h-[90vh] flex items-center">
-  <Container>
+<Section class="relative min-h-[70vh] lg:min-h-[90vh] flex items-center overflow-hidden">
+  <!-- Responsive Hero Image Layer -->
+  <div class="absolute inset-0 z-0">
+    <picture>
+      <source media="(max-width: 767px)" srcset="https://placehold.co/640x360" />
+      <source media="(max-width: 1023px)" srcset="https://placehold.co/1280x720" />
+      <img 
+        src="https://placehold.co/1920x1080" 
+        alt="Hero Background" 
+        class="w-full h-full object-cover grayscale opacity-20 transition-all duration-1000"
+      />
+    </picture>
+    <div class="absolute inset-0 bg-linear-to-b from-[var(--color-base-dark)]/80 to-[var(--color-base-dark)]"></div>
+  </div>
+
+  <Container class="relative z-10">
     <div class="max-w-4xl space-y-8 lg:space-y-12">
       <!-- High-impact text title -->
       <h1
