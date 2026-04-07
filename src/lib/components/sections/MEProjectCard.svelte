@@ -69,15 +69,15 @@
     </div>
 
     <!-- Toggle button for mobile only -->
-    <button 
+    <button
       class="lg:hidden text-[10px] uppercase tracking-widest font-bold text-[var(--color-accent)]/60 hover:text-[var(--color-accent)] transition-colors py-2"
-      onclick={() => isExpanded = !isExpanded}
+      onclick={() => (isExpanded = !isExpanded)}
     >
-      {isExpanded ? 'Collapse Details —' : 'View Details +'}
+      {isExpanded ? "Hide Details —" : "View Details +"}
     </button>
 
     <div
-      class="py-3 lg:py-4 border-t border-b border-[var(--color-base-muted)]/10 flex items-center justify-between"
+      class="py-3 lg:py-4 border-t border-b border-[var(--color-base-muted)]/10 flex flex-col items-start gap-1"
     >
       <span
         class="text-[9px] lg:text-[10px] uppercase font-bold tracking-[0.2em] text-[var(--color-accent)]"
