@@ -3,6 +3,7 @@ title: "The Future of Topology Optimization in Consumer Products"
 date: "Jan 28, 2026"
 readTime: "6 min read"
 excerpt: "Exploring how generative design and AI-driven structural analysis are moving from aerospace to everyday consumer electronics for better thermal management and weight saving."
+tags: ["Design", "FEA", "Performance"]
 ---
 
 <script>

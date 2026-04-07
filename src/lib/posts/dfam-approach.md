@@ -3,6 +3,7 @@ title: "Designing for Additive Manufacturing (DfAM): A Systems Approach"
 date: "Dec 12, 2025"
 readTime: "12 min read"
 excerpt: "Beyond 3D printing. DfAM is about rethinking the entire assembly process to reduce part counts and eliminate traditional point-of-failure joints."
+tags: ["DFAM", "Efficiency", "Design"]
 ---
 
 <script>
