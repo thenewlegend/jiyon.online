@@ -226,12 +226,15 @@
         <div class="space-y-2 text-center lg:text-left">
           <span
             class="text-xs uppercase font-bold tracking-[0.3em] text-[var(--color-accent)]"
-            >JIYON P J</span
+            >PERSONAL WEBSITE</span
           >
           <p
-            class="text-xs text-[var(--color-base-muted)] font-medium uppercase tracking-widest"
+            class="text-xs text-[var(--color-base-muted)] font-medium tracking-widest"
           >
-            © 2026 Engineered in dark mode.
+            ©<a
+              href="https://github.com/thenewlegend/jiyon.online"
+              target="_blank">thenewlegend</a
+            >
           </p>
         </div>
 

@@ -105,14 +105,18 @@
         </h2>
 
         <div
-          class="flex flex-wrap gap-x-8 gap-y-4 text-sm font-mono tracking-wider text-[var(--color-base-muted)] opacity-80 border-l border-[var(--color-accent)] pl-6"
+          class="flex flex-wrap gap-4 md:gap-x-8 gap-y-4 text-sm font-mono tracking-wider text-[var(--color-base-muted)] opacity-80 border-l border-[var(--color-accent)] pl-6"
         >
-          <a href="https://maps.app.goo.gl/f4VzmuvEgqvitaGeA" target="_blank">
+          <a
+            href="https://maps.app.goo.gl/f4VzmuvEgqvitaGeA"
+            target="_blank"
+            class="hover:text-[var(--color-accent)] transition-colors"
+          >
             <span>{RESUME_DATA.personalInformation.location}</span>
           </a>
           <a
             href={"mailto:" + RESUME_DATA.personalInformation.email}
-            class="hover:text-[var(--color-accent)] transition-colors"
+            class="hover:text-[var(--color-accent)] transition-colors break-all md:break-normal"
             >{RESUME_DATA.personalInformation.email}</a
           >
           <a
