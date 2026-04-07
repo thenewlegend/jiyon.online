@@ -13,14 +13,14 @@
     {
       id: 1,
       title: "Core Mechanical + Energy",
-      desc: "Ideal for heavy industry, design, and project management roles.",
+      desc: "Ideal for heavy industry, design and project management roles.",
       file: "/Jiyon_Resume_1.pdf",
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>`,
     },
     {
       id: 2,
       title: "Mechanical + AI + Energy",
-      desc: "Tailored for R&D, automation, and tech-driven engineering positions.",
+      desc: "Tailored for R&D, automation and tech-driven engineering positions.",
       file: "/Jiyon_Resume_2.pdf",
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m16 4-4 4-4-4"/><path d="M4.34 11.46A9 9 0 1 0 12 21a9 9 0 0 0 7.66-14.26"/><circle cx="12" cy="12" r="3"/></svg>`,
     },
@@ -68,7 +68,7 @@
       {#each resumeOptions as option, i}
         <button
           bind:this={cardElements[i]}
-          class="w-full text-left p-5 border border-[var(--color-base-muted)]/10 bg-[var(--color-base-muted)]/5 hover:bg-[var(--color-accent)]/5 hover:border-[var(--color-accent)]/30 transition-all duration-300 group rounded-sm flex items-start gap-5"
+          class="w-full text-left p-5 border border-[var(--color-base-muted)]/10 bg-[var(--color-base-muted)]/5 hover:bg-[var(--color-accent)]/5 hover:border-[var(--color-accent)]/30 transition-all duration-300 group rounded-sm flex items-start gap-5 cursor-pointer"
           onclick={() => handleDownload(option.file)}
         >
           <div
@@ -97,7 +97,7 @@
       <p
         class="text-[9px] uppercase tracking-[0.3em] text-[var(--color-base-muted)] opacity-50"
       >
-        Forthcoming exchange is anticipated with interest.
+        Forthcoming exchange is anticipated with interest
       </p>
     </div>
   </div>
