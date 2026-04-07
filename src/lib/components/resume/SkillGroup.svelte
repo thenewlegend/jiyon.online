@@ -1,17 +1,14 @@
 <script lang="ts">
-  let { category, skills = [] } = $props<{
+  let { category, skills = [], isOpen = false, onToggle } = $props<{
     category: string;
     skills: string[];
+    isOpen?: boolean;
+    onToggle?: () => void;
   }>();
-  let isOpen = $state(false);
 
   function toSentenceCase(str: string): string {
     if (!str) return "";
     return str.charAt(0).toUpperCase() + str.slice(1);
-  }
-
-  function toggle() {
-    isOpen = !isOpen;
   }
 </script>
 
@@ -21,7 +18,7 @@
   <!-- Collapsible Header -->
   <button
     class="w-full flex items-center justify-between px-5 py-4 cursor-pointer bg-[var(--color-base-muted)]/5 hover:bg-[var(--color-base-muted)]/10 transition-colors duration-300 text-left group"
-    onclick={toggle}
+    onclick={onToggle}
     aria-expanded={isOpen}
   >
     <div class="flex items-center gap-3">

@@ -14,6 +14,37 @@
 
   // Import raw data configuration to keep UI logic clean
   import { RESUME_DATA } from '$lib/config/resume';
+
+  // State Management for Capabilities
+  let openIndices = $state<number[]>([]);
+
+  function toggleGroup(index: number) {
+    if (openIndices.includes(index)) {
+      openIndices = openIndices.filter(i => i !== index);
+    } else {
+      openIndices = [...openIndices, index];
+    }
+  }
+
+  function getGroupWidth(index: number, total: number): string {
+    const isLast = index === total - 1;
+    const isFirstInPair = index % 2 === 0;
+    const peerIndex = isFirstInPair ? index + 1 : index - 1;
+
+    // Handle odd number of items for the last one
+    if (isFirstInPair && isLast) return "w-full";
+
+    const isSelfOpen = openIndices.includes(index);
+    const isPeerOpen = peerIndex < total ? openIndices.includes(peerIndex) : false;
+
+    // Mixed states (one open, one closed) trigger 100% width
+    if (isSelfOpen !== isPeerOpen) {
+      return "w-full";
+    }
+
+    // Matching states (both open or both closed) stay at 50%
+    return "w-full md:w-[calc(50%-0.375rem)]";
+  }
 </script>
 
 <svelte:head>
@@ -69,9 +100,16 @@
       <!-- Core Capabilities -->
       <Reveal>
         <ResumeSection title="Capabilities">
-          <Stagger stagger={0.08} class="flex flex-wrap gap-3 [&>*]:w-full [&>*]:md:w-[calc(50%-0.375rem)]">
-            {#each RESUME_DATA.coreCapabilities as group}
-              <SkillGroup category={group.category} skills={group.skills} />
+          <Stagger stagger={0.08} class="flex flex-wrap gap-3">
+            {#each RESUME_DATA.coreCapabilities as group, i}
+              <div class={getGroupWidth(i, RESUME_DATA.coreCapabilities.length)}>
+                <SkillGroup
+                  category={group.category}
+                  skills={group.skills}
+                  isOpen={openIndices.includes(i)}
+                  onToggle={() => toggleGroup(i)}
+                />
+              </div>
             {/each}
           </Stagger>
         </ResumeSection>
