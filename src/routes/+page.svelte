@@ -30,7 +30,7 @@
   <Hero
     title="JIYON P J"
     subtitle="Mechanical Engineer. Specializing in precision design, structural optimization, and functional prototyping."
-    cta={{ label: "View Featured Projects", href: "#projects" }}
+    cta={{ label: "Go to Resume", href: "/resume" }}
   />
 
   <!-- SKILLS / ABOUT SECTION -->
