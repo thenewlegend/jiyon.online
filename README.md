@@ -2,7 +2,6 @@
 project:
   name: "JIYON P J Portfolio"
   description: "Primary professional portfolio & resume for JIYON P J — Mechanical Engineer specializing in AI and automation."
-  version: "1.0.0"
   repository: "https://github.com/thenewlegend/jiyon.online"
 
 tech_stack:

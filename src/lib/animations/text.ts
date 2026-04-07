@@ -24,8 +24,8 @@ export function animateText(element: HTMLElement, config?: AnimationConfig) {
     scrollTrigger: {
       trigger: element,
       start: 'top 90%',
-      toggleActions: 'play none none reverse',
-      once: false
+      
+      once: true
     }
   });
 }
