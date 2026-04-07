@@ -79,7 +79,7 @@
 
       <!-- Professional Experience -->
       <Reveal>
-        <ResumeSection title="Experience">
+        <ResumeSection id="experience" title="Experience">
           <Stagger stagger={0.2} class="space-y-12">
             {#each RESUME_DATA.experience as exp}
               <ResumeItem 
