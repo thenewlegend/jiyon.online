@@ -165,7 +165,7 @@
             <Heading level={2} text="Engineering Insights" />
             <Text
               text="Notes, observations, and deep dives into the mechanics of physical product development."
-              class="opacity-70"
+              class="text-[var(--color-base-dark)] opacity-70"
             />
           </div>
         </Reveal>

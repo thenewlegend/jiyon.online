@@ -9,7 +9,7 @@
     muted?: boolean;
   }>();
 
-  const textClass = $derived(`text-base lg:text-lg leading-relaxed ${muted ? 'text-[var(--color-base-muted)]' : 'text-[var(--color-base-light)]'} ${className}`);
+  const textClass = $derived(`text-base lg:text-lg leading-relaxed ${muted ? 'text-[var(--color-base-muted)]' : (!className.includes('text-') ? 'text-[var(--color-base-light)]' : '')} ${className}`);
 </script>
 
 <p class={textClass}>
