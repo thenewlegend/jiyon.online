@@ -2,7 +2,6 @@
   import { onMount, tick } from "svelte";
   import { NAV_LINKS } from "$lib/config/nav";
   import gsap from "$lib/animations/core";
-  import Container from "./Container.svelte";
 
   let isOpen = $state(false);
   let navElement = $state<HTMLElement | null>(null);
@@ -56,45 +55,29 @@
   }
 </script>
 
-<nav
+<!-- Hamburger Toggle — fixed top-right on all pages -->
+<button
   bind:this={navElement}
-  class="fixed top-0 left-0 w-full z-[100] h-20 flex items-center transition-all duration-500 {isOpen
-    ? 'bg-transparent'
-    : 'bg-[var(--color-base-dark)]/80 backdrop-blur-md border-b border-[var(--color-base-muted)]/10'}"
+  class="fixed top-6 right-6 lg:top-8 lg:right-8 z-[101] flex flex-col gap-1.5 p-2 cursor-pointer group"
+  onclick={toggleMenu}
+  aria-label="Toggle Menu"
 >
-  <Container class="flex justify-between items-center">
-    <!-- Logo/Name 
-    <a
-      href="/"
-      class="text-xs uppercase font-bold tracking-[0.4em] text-[var(--color-accent)] z-[101]"
-    >
-      ♠️
-    </a> -->
-
-    <!-- Hamburger Toggle -->
-    <button
-      class="flex flex-col gap-1.5 p-2 z-[101] group cursor-pointer"
-      onclick={toggleMenu}
-      aria-label="Toggle Menu"
-    >
-      <span
-        class="w-6 h-[1px] bg-[var(--color-accent)] transition-all duration-300 {isOpen
-          ? 'rotate-45 translate-y-[7px]'
-          : ''}"
-      ></span>
-      <span
-        class="w-6 h-[1px] bg-[var(--color-accent)] transition-all duration-300 {isOpen
-          ? 'opacity-0'
-          : 'opacity-100'}"
-      ></span>
-      <span
-        class="w-6 h-[1px] bg-[var(--color-accent)] transition-all duration-300 {isOpen
-          ? '-rotate-45 -translate-y-[7px]'
-          : ''}"
-      ></span>
-    </button>
-  </Container>
-</nav>
+  <span
+    class="w-6 h-[1px] bg-[var(--color-accent)] transition-all duration-300 {isOpen
+      ? 'rotate-45 translate-y-[7px]'
+      : ''}"
+  ></span>
+  <span
+    class="w-6 h-[1px] bg-[var(--color-accent)] transition-all duration-300 {isOpen
+      ? 'opacity-0'
+      : 'opacity-100'}"
+  ></span>
+  <span
+    class="w-6 h-[1px] bg-[var(--color-accent)] transition-all duration-300 {isOpen
+      ? '-rotate-45 -translate-y-[7px]'
+      : ''}"
+  ></span>
+</button>
 
 <!-- Menu Overlay -->
 <div
