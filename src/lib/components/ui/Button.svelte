@@ -5,12 +5,14 @@
   let { 
     label, 
     href = undefined, 
+    target = undefined,
     onClick = undefined, 
     variant = 'primary', 
     class: className = '' 
   } = $props<{
     label: string;
     href?: string;
+    target?: string;
     onClick?: (e: MouseEvent) => void;
     variant?: 'primary' | 'secondary';
     class?: string;
@@ -47,6 +49,8 @@
   <a 
     bind:this={buttonRef}
     {href} 
+    {target}
+    rel={target === '_blank' ? 'noopener noreferrer' : undefined}
     class={buttonClass}
     onmouseenter={handleMouseEnter}
     onmouseleave={handleMouseLeave}

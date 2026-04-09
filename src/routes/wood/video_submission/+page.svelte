@@ -23,7 +23,7 @@
   async function toggleCinema() {
     if (!isCinemaMode) {
       isCinemaMode = true;
-      
+
       // Attempt Fullscreen and Orientation Lock
       if (videoWrapper) {
         try {
@@ -31,7 +31,10 @@
             await videoWrapper.requestFullscreen();
           }
           // Lock to landscape on mobile if supported
-          if (window.screen.orientation && "lock" in window.screen.orientation) {
+          if (
+            window.screen.orientation &&
+            "lock" in window.screen.orientation
+          ) {
             // @ts-ignore - lock might not be in types but exists
             await window.screen.orientation.lock("landscape").catch(() => {});
           }
@@ -55,7 +58,8 @@
       }
     };
     document.addEventListener("fullscreenchange", handleFsChange);
-    return () => document.removeEventListener("fullscreenchange", handleFsChange);
+    return () =>
+      document.removeEventListener("fullscreenchange", handleFsChange);
   });
 </script>
 
@@ -98,26 +102,25 @@
 
         <!-- Interactive Play Overlay -->
         {#if !isCinemaMode}
-          <div 
+          <div
             class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-500 cursor-pointer z-10"
             onclick={toggleCinema}
           >
-            <div class="scale-90 group-hover:scale-100 transition-transform duration-500 bg-[var(--color-accent)] text-[var(--color-base-dark)] p-6 rounded-full shadow-2xl">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <div
+              class="scale-90 group-hover:scale-100 transition-transform duration-500 bg-[var(--color-accent)] text-[var(--color-base-dark)] p-6 rounded-full shadow-2xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="currentColor"><path d="M8 5v14l11-7z" /></svg
+              >
             </div>
           </div>
         {/if}
 
         <!-- Top Right Close Button for Cinema Mode (Fallback if ESC not used) -->
-        {#if isCinemaMode}
-          <button 
-            class="absolute top-6 right-6 z-30 p-3 rounded-full bg-black/40 text-white backdrop-blur-md border border-white/10 hover:bg-black/60 transition-all cursor-pointer"
-            onclick={toggleCinema}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
-        {/if}
-
         <iframe
           src={isCinemaMode ? `${EMBED_URL}&autoplay=1` : EMBED_URL}
           title="YouTube video player"
@@ -126,28 +129,64 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
           onload={handleLoad}
-          class="w-full h-full"
+          class="w-full h-full relative z-0"
         ></iframe>
+
+        <!-- Top Right Close Button for Cinema Mode (Moved after iframe for stacking) -->
+        {#if isCinemaMode}
+          <button
+            class="absolute top-4 right-4 lg:top-8 lg:right-8 z-[100] p-4 rounded-full bg-black/60 text-white backdrop-blur-xl border border-white/20 hover:bg-black/80 transition-all cursor-pointer shadow-2xl active:scale-90"
+            style="pointer-events: auto !important;"
+            onclick={(e) => {
+              e.stopPropagation();
+              toggleCinema();
+            }}
+            aria-label="Exit Cinema Mode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        {/if}
       </div>
     </Reveal>
 
     <Reveal animation="fade-up" delay={0.3} class="w-full max-w-4xl">
       <div class="space-y-6 text-center lg:text-left">
         <Text
-          text="Welcome to the video submission portal. Please review the footage above to ensure your submission meets our quality standards. We look for high-resolution captures of the joinery process, finishing techniques, and the final assembly. Your craftsmanship inspiration helps build the community."
-          class="text-base lg:text-lg font-light leading-relaxed opacity-70"
+          text="The whole personal website was also made in collaboration with AI tools. Feel free to explore and read upon the blog to find more about lessons learned."
         />
 
         <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
           <Button
-            label="SUBMISSION OPEN"
-            href="https://youtube.com"
+            label="View in GDrive"
+            href="https://example.com"
+            target="_blank"
             variant="secondary"
             class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
           />
           <Button
-            label="4K RESOLUTION"
-            href="https://youtube.com"
+            label="Check the Website"
+            href="https://jiyon.online"
+            target="_blank"
+            variant="secondary"
+            class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+          />
+          <Button
+            label="Open Blog Post"
+            href="https://jiyon.online/blog"
+            target="_blank"
             variant="secondary"
             class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
           />
@@ -199,4 +238,4 @@
   :global(.gsap-reveal-scale) {
     transform-origin: center center;
   }
-</style>e>
+</style>
