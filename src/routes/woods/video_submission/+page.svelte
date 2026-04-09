@@ -7,11 +7,13 @@
   import Button from "$lib/components/ui/Button.svelte";
   import { onMount } from "svelte";
   import gsap from "gsap";
+  import { float } from "$lib/animations/core";
 
   // State Management
   let isLoaded = $state(false);
   let isCinemaMode = $state(false);
   let videoWrapper = $state<HTMLElement | null>(null);
+  let textContainer = $state<HTMLElement | null>(null);
 
   const VIDEO_ID = "dQw4w9WgXcQ";
   const EMBED_URL = `https://www.youtube-nocookie.com/embed/${VIDEO_ID}?si=BgS6PkTCQgnYM8DU&rel=0&showinfo=0&modestbranding=1`;
@@ -58,6 +60,11 @@
       }
     };
     document.addEventListener("fullscreenchange", handleFsChange);
+
+    if (textContainer) {
+      float({ element: textContainer, config: { delay: 1, duration: 3 } });
+    }
+
     return () =>
       document.removeEventListener("fullscreenchange", handleFsChange);
   });
@@ -102,9 +109,11 @@
 
         <!-- Interactive Play Overlay -->
         {#if !isCinemaMode}
-          <div
-            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-500 cursor-pointer z-10"
+          <button
+            type="button"
+            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-500 cursor-pointer z-10 border-none p-0"
             onclick={toggleCinema}
+            aria-label="Play Video"
           >
             <div
               class="scale-90 group-hover:scale-100 transition-transform duration-500 bg-[var(--color-accent)] text-[var(--color-base-dark)] p-6 rounded-full shadow-2xl"
@@ -117,7 +126,7 @@
                 fill="currentColor"><path d="M8 5v14l11-7z" /></svg
               >
             </div>
-          </div>
+          </button>
         {/if}
 
         <!-- Top Right Close Button for Cinema Mode (Fallback if ESC not used) -->
@@ -135,9 +144,10 @@
         <!-- Top Right Close Button for Cinema Mode (Moved after iframe for stacking) -->
         {#if isCinemaMode}
           <button
+            type="button"
             class="absolute top-4 right-4 lg:top-8 lg:right-8 z-[999] p-5 rounded-full bg-black/80 text-white backdrop-blur-2xl border-2 border-white/30 hover:bg-white hover:text-black transition-all cursor-pointer shadow-[0_0_30px_rgba(0,0,0,0.5)] active:scale-75 touch-none"
             style="pointer-events: auto !important; -webkit-tap-highlight-color: transparent;"
-            onpointerup={(e) => {
+            onclick={(e) => {
               e.stopPropagation();
               e.preventDefault();
               toggleCinema();
@@ -163,35 +173,46 @@
       </div>
     </Reveal>
 
-    <Reveal animation="fade-up" delay={0.3} class="w-full max-w-4xl">
-      <div class="space-y-6 text-center lg:text-left">
-        <Text
-          text="The whole personal website was also made in collaboration with AI tools. Feel free to explore and read upon the blog to find more about lessons learned."
-        />
+    <Reveal animation="fade-up" delay={0.3} class="w-full max-w-4xl mx-auto">
+      <div
+        bind:this={textContainer}
+        class="space-y-8 text-center flex flex-col items-center"
+      >
+        <div class="space-y-4">
+          <Text
+            text="The entire personal website was developed in collaboration with AI tools."
+            class="text-xl lg:text-2xl font-light tracking-wide opacity-90"
+          />
 
-        <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
-          <Button
-            label="View in GDrive"
-            href="https://example.com"
-            target="_blank"
-            variant="secondary"
-            class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
-          />
-          <Button
-            label="Check the Website"
-            href="https://jiyon.online"
-            target="_blank"
-            variant="secondary"
-            class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
-          />
-          <Button
-            label="Open Blog Post"
-            href="https://jiyon.online/blog"
-            target="_blank"
-            variant="secondary"
-            class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+          <Text
+            text="I encourage you to explore the site and review the blog section for insights into the lessons learned throughout the process."
+            class="opacity-70 max-w-2xl mx-auto"
           />
         </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <Button
+          label="View in GDrive"
+          href="https://example.com"
+          target="_blank"
+          variant="secondary"
+          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+        />
+        <Button
+          label="Check the Website"
+          href="https://jiyon.online"
+          target="_blank"
+          variant="secondary"
+          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+        />
+        <Button
+          label="Open Blog Post"
+          href="https://jiyon.online/blog"
+          target="_blank"
+          variant="secondary"
+          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+        />
       </div>
     </Reveal>
   </Container>

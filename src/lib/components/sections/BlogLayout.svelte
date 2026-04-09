@@ -24,7 +24,7 @@
     <div class="max-w-3xl mx-auto mb-20 space-y-8">
       <Reveal animation="fade-in">
         <Button
-          label="← Back to Blogs"
+          label="← Back to Insights"
           href="/blog"
           variant="secondary"
           class="mb-12 text-xs"
