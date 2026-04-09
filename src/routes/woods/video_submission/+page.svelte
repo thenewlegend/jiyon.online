@@ -89,6 +89,25 @@
   <Container
     class="flex flex-col items-center gap-6 lg:gap-10 relative z-10 py-8"
   >
+    <!-- Branding -->
+    <Reveal
+      animation="fade-in"
+      class="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex"
+    >
+      <div class="flex items-center gap-4">
+        <span
+          class="text-[10px] uppercase font-bold tracking-[0.4em] text-[var(--color-base-light)] opacity-40"
+        >
+          JIYON P J
+        </span>
+        <div class="w-1.5 h-1.5 rounded-full bg-[var(--color-accent)]"></div>
+        <span
+          class="text-[10px] uppercase font-bold tracking-[0.4em] text-[var(--color-base-light)] opacity-40"
+        >
+          MirrorSafe
+        </span>
+      </div>
+    </Reveal>
     <!-- Video Wrapper -->
     <Reveal animation="scale" delay={0.1} class="w-full">
       <div
@@ -185,7 +204,7 @@
           />
 
           <Text
-            text="I encourage you to explore the site and review the blog section for insights into the lessons learned throughout the process."
+            text="Exploe the blog section for insights into the lessons learned throughout the process."
             class="opacity-70 max-w-2xl mx-auto"
           />
         </div>

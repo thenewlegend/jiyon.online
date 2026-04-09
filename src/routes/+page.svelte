@@ -94,12 +94,8 @@
   <Section id="projects">
     <Container>
       <Reveal animation="fade-in" class="mb-10">
-        <div class="space-y-4">
-          <Heading level={2} text="Featured Projects" />
-          <Text
-            text="A selection of engineered solutions that demonstrate a focus on structural efficiency and measurable impact."
-            muted
-          />
+        <div class="space-y-4" style="margin-bottom: 2.5rem;">
+          <Heading level={1} text="Featured Projects" />
         </div>
       </Reveal>
 

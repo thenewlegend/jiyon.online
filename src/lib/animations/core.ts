@@ -22,8 +22,8 @@ export const defaultEase = 'power2.out';
 
 export function float({ element, config }: AnimationParams) {
   return gsap.to(element, {
-    y: -3,
-    duration: config?.duration ?? 2.5,
+    y: -1,
+    duration: config?.duration ?? 10,
     repeat: -1,
     yoyo: true,
     ease: 'sine.inOut',
