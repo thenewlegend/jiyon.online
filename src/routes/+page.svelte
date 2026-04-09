@@ -119,8 +119,42 @@
     class="bg-[var(--color-base-dark)]/50 backdrop-blur-sm"
   >
     <Container>
+      <div class="mt-16 lg:mt-24">
+        <Reveal animation="fade-in" class="mb-10">
+          <Heading level={2} text="Work Experience" />
+        </Reveal>
+
+        <Reveal animation="fade-up">
+          <ExperienceCard item={experience[0]} isCurrent={true} />
+        </Reveal>
+
+        <Reveal animation="fade-in" delay={0.2}>
+          <a
+            href="/resume#experience"
+            class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group mt-8 lg:mt-12"
+          >
+            <span
+              class="border-b border-transparent group-hover:border-current transition-colors"
+              >See complete experience</span
+            >
+            <svg
+              class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path></svg
+            >
+          </a>
+        </Reveal>
+      </div>
+
       <div class="max-w-4xl">
-        <div>
+        <div style="margin-top: 2rem;">
           <Reveal animation="fade-in" class="mb-10">
             <Heading level={2} text="Education" />
           </Reveal>
@@ -153,40 +187,6 @@
             </a>
           </Reveal>
         </div>
-
-        <div class="mt-16 lg:mt-24">
-          <Reveal animation="fade-in" class="mb-10">
-            <Heading level={2} text="Work Experience" />
-          </Reveal>
-
-          <Reveal animation="fade-up">
-            <ExperienceCard item={experience[0]} isCurrent={true} />
-          </Reveal>
-
-          <Reveal animation="fade-in" delay={0.2}>
-            <a
-              href="/resume#experience"
-              class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group mt-8 lg:mt-12"
-            >
-              <span
-                class="border-b border-transparent group-hover:border-current transition-colors"
-                >See complete experience</span
-              >
-              <svg
-                class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                ></path></svg
-              >
-            </a>
-          </Reveal>
-        </div>
       </div>
     </Container>
   </Section>
@@ -197,9 +197,10 @@
       <div class="max-w-4xl mx-auto">
         <Reveal animation="fade-in" class="mb-12">
           <div class="space-y-4">
-            <Heading level={2} text="Engineering Insights" />
+            <Heading level={2} text="Insights Blog" />
             <Text
-              text="Notes, observations, and deep dives into the mechanics of physical product development."
+              text="Notes, observations and insights on the planning and development of various projects.
+"
               class="text-[var(--color-base-dark)] opacity-70"
             />
           </div>

@@ -9,6 +9,7 @@ export const projects = [
             "Re-engineered the elbow joint using topology optimization and carbon fiber-reinforced composites.",
         impact: "Reduced weight by 22% while increasing stiffness by 15%.",
         tools: ["SolidWorks", "ANSYS", "FEA", "Composite Design"],
+        links: [{ label: "Topology Analysis", url: "https://example.com" }, { label: "Topology Analysis", url: "https://example.com" }],
     },
     {
         id: "p2",
@@ -20,6 +21,7 @@ export const projects = [
             "Designed a micro-channel cold plate using additive manufacturing to maximize surface area-to-volume ratio.",
         impact: "Maintained battery temp 8°C lower during 30min charge cycles.",
         tools: ["CFD", "DFAM", "Thermal Analysis", "GD&T"],
+        links: [{ label: "Topology Analysis", url: "https://example.com" }],
     },
     {
         id: "p3",
@@ -31,5 +33,6 @@ export const projects = [
             "Developed a high-precision flexure-based gripper system with integrated piezo-actuators for sub-micron control.",
         impact: "Defect rate dropped to 0.4%, throughput increased by 300%.",
         tools: ["Precision Design", "Mechanism Design", "Mechatronics"],
+        links: [{ label: "Topology", url: "https://example.com" }, { label: "Analysis", url: "https://example.com" }, { label: "View", url: "https://example.com" }],
     },
 ];

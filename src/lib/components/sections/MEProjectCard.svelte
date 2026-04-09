@@ -11,6 +11,7 @@
     impact: string;
     tools: string[];
     image?: string;
+    links?: { label: string; url: string }[];
   };
 
   let { project } = $props<{ project: MEProject }>();
@@ -98,5 +99,53 @@
         </span>
       {/each}
     </div>
+
+    <!-- Project Links Section -->
+    {#if project.links && project.links.length > 0}
+      <div class="pt-6 mt-auto">
+        <div class="flex flex-wrap gap-3">
+          {#each project.links as link}
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-3 px-4 py-2 bg-[var(--color-accent)]/5 border border-[var(--color-accent)]/20 hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all duration-300 rounded-sm text-[9px] uppercase font-bold tracking-[0.2em] text-[var(--color-accent)] cursor-pointer group/link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="opacity-60 group-hover/link:opacity-100 transition-opacity"
+              >
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <span>{link.label || 'Visit'}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="transform -rotate-45 group-hover/link:rotate-0 transition-transform duration-500 opacity-40 group-hover/link:opacity-100"
+              >
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          {/each}
+        </div>
+      </div>
+    {/if}
   </div>
 </article>
