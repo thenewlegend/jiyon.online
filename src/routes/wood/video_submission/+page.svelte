@@ -135,22 +135,23 @@
         <!-- Top Right Close Button for Cinema Mode (Moved after iframe for stacking) -->
         {#if isCinemaMode}
           <button
-            class="absolute top-4 right-4 lg:top-8 lg:right-8 z-[100] p-4 rounded-full bg-black/60 text-white backdrop-blur-xl border border-white/20 hover:bg-black/80 transition-all cursor-pointer shadow-2xl active:scale-90"
-            style="pointer-events: auto !important;"
-            onclick={(e) => {
+            class="absolute top-4 right-4 lg:top-8 lg:right-8 z-[999] p-5 rounded-full bg-black/80 text-white backdrop-blur-2xl border-2 border-white/30 hover:bg-white hover:text-black transition-all cursor-pointer shadow-[0_0_30px_rgba(0,0,0,0.5)] active:scale-75 touch-none"
+            style="pointer-events: auto !important; -webkit-tap-highlight-color: transparent;"
+            onpointerup={(e) => {
               e.stopPropagation();
+              e.preventDefault();
               toggleCinema();
             }}
             aria-label="Exit Cinema Mode"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2.5"
+              stroke-width="3"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
