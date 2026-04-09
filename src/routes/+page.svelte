@@ -119,7 +119,7 @@
     class="bg-[var(--color-base-dark)]/50 backdrop-blur-sm"
   >
     <Container>
-      <div class="mt-16 lg:mt-24">
+      <div class="mt-8 lg:mt-6">
         <Reveal animation="fade-in" class="mb-10">
           <Heading level={2} text="Work Experience" />
         </Reveal>
