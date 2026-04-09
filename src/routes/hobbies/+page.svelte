@@ -95,13 +95,10 @@
       </Reveal>
     </div>
 
-    <!-- Filters -->
+    <!-- Filters 
+     
     <Reveal animation="fade-in" delay={0.2}>
       <div class="mb-12 border-b border-[var(--color-base-muted)]/10 pb-4">
-        <!-- Pass selectedTag as an array of 1 for TagFilter compatibility if needed, 
-             but I'll update TagFilter to support single selection state if it's cleaner.
-             Current TagFilter expects selectedTags: string[].
-        -->
         <TagFilter
           tags={allTags}
           selectedTags={selectedTag ? [selectedTag] : []}
@@ -109,6 +106,7 @@
         />
       </div>
     </Reveal>
+  -->
 
     <!-- Hobbies Grid -->
     <div bind:this={gridElement}>
