@@ -128,11 +128,15 @@
   <div
     class="absolute bottom-12 left-0 w-full flex justify-center gap-8 text-[10px] uppercase font-bold tracking-widest text-[var(--color-base-muted)]"
   >
-    <a href="mailto:contact@jiyon.com" class="hover:text-[var(--color-accent)]"
-      >Email</a
+    <a
+      href="mailto:jiyonpj2501@gmail.com"
+      target="_blank"
+      class="hover:text-[var(--color-accent)]">Email</a
     >
-    <a href="https://linkedin.com" class="hover:text-[var(--color-accent)]"
-      >LinkedIn</a
+    <a
+      href="https://linkedin.com/in/jiyon"
+      target="_blank"
+      class="hover:text-[var(--color-accent)]">LinkedIn</a
     >
   </div>
 </div>
