@@ -17,11 +17,11 @@ export const HOBBIES: Hobby[] = [
   {
     id: '1',
     title: 'Strategic Chess',
-    description: 'Mastering the art of strategy and foresight. I enjoy analyzing classic games and competing in local tournaments.',
+    description: 'Mastering the art of strategy and foresight. I enjoy analyzing classic games and playing .',
     tags: ['Games'],
     image: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=2071&auto=format&fit=crop',
     works: [
-      { type: 'link', url: 'https://chess.com', label: 'Chess.com Profile' },
+      { type: 'link', url: 'https://www.chess.com/member/tnl117', label: 'Chess.com Profile' },
       { type: 'image', url: 'https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&w=2000', label: 'Tournament Highlights' }
     ]
   },
@@ -47,15 +47,4 @@ export const HOBBIES: Hobby[] = [
       { type: 'image', url: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000', label: 'Code Snippets' }
     ]
   },
-  {
-    id: '4',
-    title: 'Urban Photography',
-    description: 'Capturing the hidden geometries of the city. I love finding beauty in the mundane details of everyday life.',
-    tags: ['Photography'],
-    image: 'https://images.unsplash.com/photo-1493236296811-d218a04f9b39?q=80&w=2070&auto=format&fit=crop',
-    works: [
-      { type: 'link', url: 'https://unsplash.com', label: 'Unsplash Portfolio' },
-      { type: 'image', url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2000', label: 'Nature Series' }
-    ]
-  }
 ];

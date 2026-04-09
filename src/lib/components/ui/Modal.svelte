@@ -67,21 +67,21 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div 
       bind:this={backdropElement}
-      class="absolute inset-0 bg-[var(--color-base-dark)]/80 backdrop-blur-xl cursor-crosshair"
+      class="absolute inset-0 bg-[var(--color-base-dark)]/95 backdrop-blur-xl cursor-pointer"
       onclick={onClose}
     >
-      <div class="absolute inset-0 bg-[linear-gradient(to_right,#88888812_1px,transparent_1px),linear-gradient(to_bottom,#88888812_1px,transparent_1px)] bg-[size:2rem_2rem]"></div>
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
     </div>
 
     <!-- Modal Content holder -->
     <div 
       bind:this={modalElement}
-      class="relative w-full max-w-lg bg-[var(--color-base-dark)] border border-[var(--color-base-muted)]/20 rounded-sm shadow-2xl p-8 lg:p-12 overflow-hidden"
+      class="relative w-full max-w-3xl bg-[var(--color-base-dark)] border border-[var(--color-base-muted)]/20 rounded-sm shadow-2xl overflow-hidden max-h-[90vh] flex flex-col"
     >
       <!-- Subtle accent corner -->
-      <div class="absolute top-0 right-0 w-24 h-24 bg-[var(--color-accent)]/5 blur-3xl rounded-full translate-x-12 -translate-y-12"></div>
+      <div class="absolute top-0 right-0 w-32 h-32 bg-[var(--color-accent)]/5 blur-3xl rounded-full translate-x-16 -translate-y-16 pointer-events-none"></div>
       
-      <div class="relative z-10">
+      <div class="relative z-10 overflow-y-auto p-8 lg:p-12 custom-scrollbar">
         {@render children?.()}
       </div>
 
