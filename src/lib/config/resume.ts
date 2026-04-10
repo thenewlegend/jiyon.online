@@ -16,31 +16,39 @@ export const RESUME_DATA = {
   profileSummary:
     "Mechanical Engineer with a Master’s in Energy Engineering and Management and 2 years of industry experience in engineering project coordination within construction environments. Delivered 24+ regulatory submissions with 80% first-pass approval and reduced approval timelines by ~40%. Combines strong engineering fundamentals with hands-on experience in data processing, automation, and AI-driven workflows using Python, MATLAB, and modern LLM-based tools. Seeking to apply analytical and engineering capabilities in a data-driven or mechanical engineering role.",
   coreCapabilities: [
-    {
-      category: "Mechanical Engineering Fundamentals",
-      skills: ["Thermodynamics", "Heat Transfer", "Fluid Mechanics", "HVAC Systems", "Heat Exchangers", "Refrigeration & Heat Pump Systems", "Performance Analysis of Energy Systems"]
-    },
-    {
-      category: "Programming & Automation",
-      skills: ["Python (data processing, automation scripts)", "MATLAB", "Excel automation", "API integrations", "Workflow automation", "LLM-based applications (Google Gemini, Vercel AI SDK)"]
-    },
-    {
-      category: "Engineering Project Coordination",
-      skills: ["Technical Documentation", "Engineering Drawing Interpretation", "Regulatory Compliance", "Site Coordination", "Workflow & Submission Management", "Stakeholder Coordination"]
-    },
-    {
-      category: "Energy & Sustainability",
-      skills: ["Renewable Energy Systems (Solar, Wind, Biomass)", "Hydrogen Systems (Fundamentals)", "Energy Efficiency Analysis", "Industrial Energy Conservation", "Decarbonization Principles", "ESG Fundamentals"]
-    },
-    {
-      category: "Technical Tools",
-      skills: ["AutoCAD", "SolidWorks", "Autodesk Fusion", "Python", "MATLAB", "MATLAB Simulink", "Microsoft Excel", "COMSOL Multiphysics"]
-    },
-    {
-      category: "Research & Experimental Skills",
-      skills: ["Hydrogen Embrittlement", "Tensile Testing", "Scanning Electron Microscopy (SEM)", "Stress–Strain Analysis", "Experimental Data Analysis"]
-    }
-  ],
+  {
+    category: "Mechanical Engineering Fundamentals",
+    skills: ["Thermodynamics", "Heat Transfer", "Fluid Mechanics", "HVAC Systems", "Heat Exchangers", "Refrigeration & Heat Pump Systems", "Performance Analysis of Energy Systems"]
+  },
+  {
+    category: "Energy & Sustainability",
+    skills: ["Renewable Energy Systems (Solar, Wind, Biomass)", "Hydrogen Systems", "Energy Efficiency Analysis", "Industrial Energy Conservation", "Decarbonization Principles", "ESG Fundamentals"]
+  },
+  {
+    category: "Software Engineering & AI Workflows",
+    skills: ["Python, MATLAB & Web Stack (HTML, CSS, JS)", "Spec-Driven AI Product Development", "LLM Integration (Gemini API, Vercel AI SDK)", "Version Control (Git/GitHub)", "API Integrations", "Development Environments (VS Code)"]
+  },
+  {
+    category: "Design & Multimedia Production",
+    skills: ["UI/UX & Graphic Design", "Video Editing (DaVinci Resolve)", "Visual Content Creation (Photoshop, Canva)", "Professional Presentations & Pitch Decks (PowerPoint)"]
+  },
+  {
+    category: "Technical Tools & Engineering Software",
+    skills: ["AutoCAD", "SolidWorks", "Autodesk Fusion", "COMSOL Multiphysics", "MATLAB Simulink", "Advanced Excel (VBA/Macros)"]
+  },
+  {
+    category: "Research & Experimental Analysis",
+    skills: ["Hydrogen Embrittlement", "Tensile Testing", "Scanning Electron Microscopy (SEM)", "Stress–Strain Analysis", "Experimental Data Analysis", "Scientific Writing & Technical Publishing"]
+  },
+  {
+    category: "Leadership & Modern Project Management",
+    skills: ["Agile & Scrum Methodologies", "Cross-Functional Leadership", "Strategic Planning & Execution", "Effective Technical Communication", "Stakeholder & Site Coordination", "Technical Documentation & Regulatory Compliance"]
+  },
+  {
+    category: "Professional Excellence & Strategic Thinking",
+    skills: ["Critical Thinking & Complex Problem Solving", "Analytical Reasoning", "Adaptability & Continuous Learning", "Interdisciplinary Collaboration", "Attention to Detail", "Ethical & Professional Responsibility"]
+  }
+],
   experience: [
     {
       title: "Project Coordinator (Engineering Projects)",
