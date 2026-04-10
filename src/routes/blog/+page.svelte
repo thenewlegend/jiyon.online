@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>Engineering Insights | JIYON P J</title>
+  <title>Insights Blog</title>
   <meta
     name="description"
     content="A collection of technical notes, research, and engineering reflections by JIYON P J."
@@ -42,9 +42,9 @@
             Total: {String(data.posts.length).padStart(2, "0")} Insights
           </div>
         </div>
-        <Heading level={1} text="Engineering Insights" class="mb-4" />
+        <Heading level={1} text="Insights Blog" class="mb-4" />
         <Text
-          text="A chronological log of structural research, design philosophies, and mechanical breakthroughs."
+          text="Notes, observations and insights on the development of various projects and news about latest technologies"
           class="text-xl lg:text-2xl font-light opacity-60 max-w-2xl"
         />
       </Reveal>

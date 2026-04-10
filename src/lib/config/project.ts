@@ -1,38 +1,62 @@
 export const projects = [
     {
         id: "p1",
-        title: "Structural Optimization of Robotic Arm",
-        date: "2025",
+        title: "AI-Based Energy Systems Troubleshooting Assistant",
+        date: "",
         context:
-            "Increased payload requirements for a 6-axis industrial robot without resizing existing motors.",
+            "Diagnosing complex energy systems required domain expertise and structured troubleshooting workflows.",
         solution:
-            "Re-engineered the elbow joint using topology optimization and carbon fiber-reinforced composites.",
-        impact: "Reduced weight by 22% while increasing stiffness by 15%.",
-        tools: ["SolidWorks", "ANSYS", "FEA", "Composite Design"],
-        links: [{ label: "Topology Analysis", url: "https://example.com" }, { label: "Topology Analysis", url: "https://example.com" }],
+            "Developed a web-based diagnostic chatbot using SvelteKit and Google Gemini API, implementing guided questioning logic to systematically identify faults.",
+        impact:
+            "Improved troubleshooting efficiency by structuring diagnostic workflows and reducing reliance on manual expertise.",
+        tools: ["SvelteKit", "Google Gemini API", "AI Chatbot", "System Diagnostics"],
+        links: [{ label: "AIfTES WebApp", url: "https://aitfes.vercel.app/"},
+            { label: "GitHub", url: "https://github.com/thenewlegend/AITfES" }
+        ],
     },
     {
         id: "p2",
-        title: "Precision Heat Exchanger for EV Batteries",
-        date: "2024",
+        title: "MirrorSafe - Lightweight Folder Backup System",
+        date: "2025",
         context:
-            "Battery thermal management system failing during rapid charging cycles in high-ambient temperatures.",
+            "Users required a simple, reliable backup solution without complex configuration or heavy software overhead.",
         solution:
-            "Designed a micro-channel cold plate using additive manufacturing to maximize surface area-to-volume ratio.",
-        impact: "Maintained battery temp 8°C lower during 30min charge cycles.",
-        tools: ["CFD", "DFAM", "Thermal Analysis", "GD&T"],
-        links: [{ label: "Topology Analysis", url: "https://example.com" }],
+            "Developed a desktop application using Python and PySide6 to mirror directories with support for incremental backups, scheduling, and multi-threaded file operations, running unobtrusively via system tray.",
+        impact:
+            "Reduced backup time and storage usage through incremental copying while ensuring data integrity via exact mirror replication.",
+        tools: ["Python", "PySide6", "Multi-threading", "File Systems", "Desktop GUI"],
+        links: [
+            { label: "GitHub", url: "https://github.com/thenewlegend/mirrorsafe" }
+        ],
     },
     {
         id: "p3",
-        title: "Automated Micro-Assembly Mechanism",
-        date: "2024",
+        title: "AI Financial Data Query Interface",
+        date: "",
         context:
-            "Manual tiny-component assembly resulting in a 12% defect rate and high labor costs.",
+            "Extracting meaningful insights from raw financial datasets required manual querying and domain-specific knowledge.",
         solution:
-            "Developed a high-precision flexure-based gripper system with integrated piezo-actuators for sub-micron control.",
-        impact: "Defect rate dropped to 0.4%, throughput increased by 300%.",
-        tools: ["Precision Design", "Mechanism Design", "Mechatronics"],
-        links: [{ label: "Topology", url: "https://example.com" }, { label: "Analysis", url: "https://example.com" }, { label: "View", url: "https://example.com" }],
+            "Built a natural language interface leveraging Alpha Vantage MCP integration to enable conversational querying of financial data.",
+        impact:
+            "Enabled intuitive access to structured financial insights, significantly reducing analysis time.",
+        tools: ["Python", "Alpha Vantage API", "MCP", "NLP Interface"],
+        links: [
+            { label: "GitHub", url: "https://github.com/thenewlegend/AlphaSentience" }
+        ],
+    },
+    {
+        id: "p4",
+        title: "Excel Master Index Builder (Python Automation Tool)",
+        date: "",
+        context:
+            "Managing large collections of files lacked structured indexing, leading to inefficiencies in navigation and retrieval.",
+        solution:
+            "Engineered a Python-based automation tool to recursively scan directories and generate structured Excel indices with dynamic hyperlinking.",
+        impact:
+            "Eliminated manual indexing effort and significantly improved data accessibility and navigation speed.",
+        tools: ["Python", "Automation", "Excel Processing", "File System Management"],
+        links: [
+            { label: "GitHub", url: "https://github.com/thenewlegend/Excel-Master-Sheet-Builder" }
+        ],
     },
 ];

@@ -23,7 +23,7 @@
   <title>JIYON P J</title>
   <meta
     name="description"
-    content="Mechanical engineer with AI and automation capability"
+    content="Mechanical Engineer (Energy) with AI and Automation Capability"
   />
 </svelte:head>
 
@@ -31,7 +31,7 @@
   <!-- HERO SECTION -->
   <Hero
     title="JIYON P J"
-    subtitle="Mechanical engineer with AI and automation capability"
+    subtitle="Mechanical Engineer (Energy) with AI and Automation Capability"
     cta={{ label: "Go to Resume", href: "/resume" }}
   />
 
@@ -43,13 +43,8 @@
     <Container>
       <Grid cols={{ base: 1, lg: 1 }} gap="gap-16">
   <Reveal animation="fade-in">
-    <Heading level={2} text="Engineering Philosophy" class="mb-8" />
     <p class="text-xl lg:text-4xl font-medium tracking-tight leading-tight opacity-90 max-w-4xl">
-      I believe engineering is the synergy of physical laws and computational intelligence. 
-      I focus on <span class="border-b-2 border-current">sustainable energy systems</span>, 
-      <span class="border-b-2 border-current">AI-driven automation</span>, and 
-      <span class="border-b-2 border-current">rigorous experimental validation</span> to 
-      turn abstract theories into high-performance reality.
+      Navigating the intersection of <span class="border-b-2 border-current">energy</span> and <span class="border-b-2 border-current">agentic workflows</span> to solve complex industrial challenges.
     </p>
   </Reveal>
 
@@ -139,41 +134,7 @@
     class="bg-[var(--color-base-dark)]/50 backdrop-blur-sm"
   >
     <Container>
-      <div class="mt-8 lg:mt-6">
-        <Reveal animation="fade-in" class="mb-10">
-          <Heading level={2} text="Work Experience" />
-        </Reveal>
-
-        <Reveal animation="fade-up">
-          <ExperienceCard item={experience[0]} isCurrent={true} />
-        </Reveal>
-
-        <Reveal animation="fade-in" delay={0.2}>
-          <a
-            href="/resume#experience"
-            class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group mt-8 lg:mt-12"
-          >
-            <span
-              class="border-b border-transparent group-hover:border-current transition-colors"
-              >See complete experience</span
-            >
-            <svg
-              class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              ></path></svg
-            >
-          </a>
-        </Reveal>
-      </div>
-
-      <div class="max-w-4xl">
+          <div class="max-w-4xl">
         <div style="margin-top: 2rem;">
           <Reveal animation="fade-in" class="mb-10">
             <Heading level={2} text="Education" />
@@ -208,6 +169,42 @@
           </Reveal>
         </div>
       </div>
+
+      <div class="mt-8 lg:mt-6">
+        <Reveal animation="fade-in" class="mb-10">
+          <Heading level={2} text="Work Experience" />
+        </Reveal>
+
+        <Reveal animation="fade-up">
+          <ExperienceCard item={experience[0]} isCurrent={true} />
+        </Reveal>
+
+        <Reveal animation="fade-in" delay={0.2}>
+          <a
+            href="/resume#experience"
+            class="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-[var(--color-base-muted)] hover:text-[var(--color-accent)] transition-colors duration-300 group mt-8 lg:mt-12"
+          >
+            <span
+              class="border-b border-transparent group-hover:border-current transition-colors"
+              >See complete experience</span
+            >
+            <svg
+              class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path></svg
+            >
+          </a>
+        </Reveal>
+      </div>
+
+
     </Container>
   </Section>
   </div>
@@ -220,9 +217,9 @@
           <div class="space-y-4">
             <Heading level={2} text="Insights Blog" />
             <Text
-              text="Notes, observations and insights on the planning and development of various projects.
+              text="Notes, observations and insights.
 "
-              class="text-[var(--color-base-dark)] opacity-70"
+              class="text-[var(--color-base-dark)] opacity-90"
             />
           </div>
         </Reveal>
@@ -248,8 +245,18 @@
         <div class="space-y-2 text-center lg:text-left">
           <span
             class="text-xs uppercase font-bold tracking-[0.3em] text-[var(--color-accent)]"
-            >PERSONAL WEBSITE</span
-          >
+            ><span id="time"></span>
+
+            <script>
+              function updateTime() {
+                const now = new Date();
+                document.getElementById("time").textContent = now.toLocaleTimeString();
+              }
+
+              updateTime();
+              setInterval(updateTime, 1000);
+            </script>
+            </span>
           <p
             class="text-xs text-[var(--color-base-muted)] font-medium tracking-widest"
           >

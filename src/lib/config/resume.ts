@@ -102,6 +102,18 @@ export const RESUME_DATA = {
       ]
     },
     {
+      title: "MirrorSafe - Lightweight Folder Backup System",
+      link: "github.com/thenewlegend/mirrorsafe",
+      details: [
+        "Developed a desktop backup application using Python and PySide6 for efficient folder mirroring",
+        "Implemented incremental backup logic to reduce storage usage and improve performance",
+        "Integrated multi-threaded file operations for faster processing of large datasets",
+        "Designed a system tray-based interface for unobtrusive background execution",
+        "Enabled scheduling capabilities for automated and reliable backups",
+        "Ensured data integrity through exact mirror replication mechanisms"
+      ]
+    },
+    {
       title: "AI Financial Data Query Interface",
       link: "github.com/thenewlegend/AlphaSentience",
       details: [
