@@ -41,57 +41,79 @@
     class="bg-[var(--color-accent)] text-[var(--color-base-dark)] selection:bg-[var(--color-base-dark)] selection:text-[var(--color-accent)]"
   >
     <Container>
-      <Grid cols={{ base: 1, lg: 2 }} gap="gap-16">
-        <Reveal animation="fade-in">
-          <Heading level={2} text="Engineering Philosophy" class="mb-8" />
-          <p
-            class="text-xl lg:text-3xl font-medium tracking-tight leading-normal opacity-90"
-          >
-            I believe engineering is the bridge between abstract physics and
-            tangible solutions. I focus on <span
-              class="border-b-2 border-current">material efficiency</span
-            >, <span class="border-b-2 border-current">producible design</span>,
-            and
-            <span class="border-b-2 border-current">quantitative impact</span>.
-          </p>
-        </Reveal>
+      <Grid cols={{ base: 1, lg: 1 }} gap="gap-16">
+  <Reveal animation="fade-in">
+    <Heading level={2} text="Engineering Philosophy" class="mb-8" />
+    <p class="text-xl lg:text-4xl font-medium tracking-tight leading-tight opacity-90 max-w-4xl">
+      I believe engineering is the synergy of physical laws and computational intelligence. 
+      I focus on <span class="border-b-2 border-current">sustainable energy systems</span>, 
+      <span class="border-b-2 border-current">AI-driven automation</span>, and 
+      <span class="border-b-2 border-current">rigorous experimental validation</span> to 
+      turn abstract theories into high-performance reality.
+    </p>
+  </Reveal>
 
-        <Reveal animation="fade-up" delay={0.4}>
-          <Grid cols={{ base: 2, lg: 2 }} gap="gap-4">
-            <div class="space-y-2">
-              <h4
-                class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-40"
-              >
-                Core Stack
-              </h4>
-              <ul class="text-sm font-medium space-y-1">
-                <li>SolidWorks / Fusion 360</li>
-                <li>ANSYS / Abaqus (FEA/CFD)</li>
-                <li>Python / MATLAB</li>
-                <li>GD&T / DFM / DFA</li>
-              </ul>
-            </div>
-            <div class="space-y-2">
-              <h4
-                class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-40"
-              >
-                Expertise
-              </h4>
-              <ul class="text-sm font-medium space-y-1">
-                <li>Topology Optimization</li>
-                <li>Additive Manufacturing</li>
-                <li>Precision Machining</li>
-                <li>Thermal Management</li>
-              </ul>
-            </div>
-          </Grid>
-        </Reveal>
-      </Grid>
+  <Reveal animation="fade-up" delay={0.4}>
+    <Grid cols={{ base: 2, lg: 4 }} gap="gap-8">
+      <div class="space-y-4">
+        <h4 class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-40">
+          Core Stack
+        </h4>
+        <ul class="text-sm font-medium space-y-2 opacity-80">
+          <li>MATLAB / Simulink</li>
+          <li>SolidWorks / Fusion 360</li>
+          <li>COMSOL Multiphysics</li>         
+          <li>AutoCAD / Excel</li>
+        </ul>
+      </div>      
+
+      <div class="space-y-4">
+        <h4 class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-40">
+          Domain Expertise
+        </h4>
+        <ul class="text-sm font-medium space-y-2 opacity-80">
+          <li>Thermal & HVAC Management</li>
+          <li>Hydrogen & Green Energy</li>
+          <li>Renewable Energy Systems</li>
+          <li>Energy Storage Systems (ESS)</li>
+          <li>Decarbonization & ESG</li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-40">
+          Intelligent Systems
+        </h4>
+        <ul class="text-sm font-medium space-y-2 opacity-80">
+          <li>Scientific Computing (Python/Jupyter)</li>
+          <li>Full-Stack (HTML/CSS/JS) / SvelteKit</li>
+          <li>Spec-Driven AI Development</li>
+          <li>Prompt Optimization & Model Tuning</li>
+          <li>Generative API Integration (Gemini)</li>        
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-[10px] uppercase font-bold tracking-[0.2em] opacity-40">
+          Product & Design
+        </h4>
+        <ul class="text-sm font-medium space-y-2 opacity-80">
+          <li>Agile / Scrum Methodologies</li>
+          <li>UI/UX Design (Figma/Google Stitch)</li>
+          <li>Graphic Design (Photoshop/Canva)</li>
+          <li>Video Production (DaVinci Resolve)</li>
+          <li>Technical Documentation</li>
+        </ul>
+      </div>
+    </Grid>
+  </Reveal>
+</Grid>
     </Container>
   </Section>
 
   <!-- PROJECTS SECTION -->
-  <Section id="projects">
+  <div class="stark-dynamic-fade">
+    <Section id="projects">
     <Container>
       <Reveal animation="fade-in" class="mb-10">
         <div class="space-y-4" style="margin-bottom: 2.5rem;">
@@ -108,9 +130,11 @@
       </Carousel>
     </Container>
   </Section>
+  </div>
 
   <!-- EXPERIENCE SECTION -->
-  <Section
+  <div class="stark-inverse-fade">
+    <Section
     id="experience"
     class="bg-[var(--color-base-dark)]/50 backdrop-blur-sm"
   >
@@ -186,6 +210,7 @@
       </div>
     </Container>
   </Section>
+  </div>
 
   <!-- BLOG / WRITING SECTION -->
   <Section id="blog" class="bg-white text-[var(--color-base-dark)]">
@@ -256,3 +281,42 @@
     </Container>
   </Section>
 </main>
+
+<style>
+.stark-dynamic-fade {
+  background: linear-gradient(180deg, 
+    /* 0% - 15%: The Lighter Black Variance */
+    #131313 0%, #131313 1%, #131313 2%, #121212 3%, #121212 4%, #121212 5%, 
+    #111111 6%, #111111 7%, #111111 8%, #101010 9%, #101010 10%, #101010 11%, 
+    #0f0f0f 12%, #0f0f0f 13%, #0e0e0e 14%, #0e0e0e 15%,
+    /* 16% - 84%: Granular Decay */
+    #0e0e0e 16%, #0d0d0d 18%, #0d0d0d 20%, #0c0c0c 22%, #0c0c0c 24%,
+    #0b0b0b 26%, #0b0b0b 28%, #0a0a0a 30%, #0a0a0a 32%, #090909 34%,
+    #090909 36%, #080808 38%, #080808 40%, #070707 42%, #070707 44%,
+    #060606 46%, #060606 48%, #050505 50%, #050505 52%, #040404 54%,
+    #040404 56%, #030303 58%, #030303 60%, #020202 62%, #020202 64%,
+    #010101 66%, #010101 68%, #000000 70%, #000000 72%, #000000 74%,
+    #000000 76%, #000000 78%, #000000 80%, #000000 82%, #000000 84%,
+    /* 85% - 100%: The Void (Seam Prep) */
+    #000000 85%, #000000 90%, #000000 95%, #000000 100%
+  );
+}
+
+.stark-inverse-fade {
+  background: linear-gradient(180deg, 
+    /* 0% - 15%: The Void Anchor (Matches previous section end) */
+    #000000 0%, #000000 5%, #000000 10%, #000000 15%,
+    /* 16% - 84%: Granular Ascent */
+    #000000 16%, #010101 18%, #010101 20%, #020202 22%, #020202 24%,
+    #030303 26%, #030303 28%, #040404 30%, #040404 32%, #050505 34%,
+    #050505 36%, #060606 38%, #060606 40%, #070707 42%, #070707 44%,
+    #080808 46%, #080808 48%, #090909 50%, #090909 52%, #0a0a0a 54%,
+    #0a0a0a 56%, #0b0b0b 58%, #0b0b0b 60%, #0c0c0c 62%, #0c0c0c 64%,
+    #0d0d0d 66%, #0d0d0d 68%, #0e0e0e 70%, #0e0e0e 72%, #0e0e0e 74%,
+    #0f0f0f 76%, #0f0f0f 78%, #101010 80%, #101010 82%, #111111 84%,
+    /* 85% - 100%: Dynamic Charcoal Finish */
+    #111111 85%, #121212 87%, #121212 89%, #121212 91%, #131313 93%, 
+    #131313 95%, #131313 96%, #121212 97%, #131313 98%, #131313 99%, #131313 100%
+  );
+}
+</style>
