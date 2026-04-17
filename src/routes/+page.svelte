@@ -23,7 +23,7 @@
   <title>JIYON P J</title>
   <meta
     name="description"
-    content="Mechanical Engineer (Energy) with AI and Automation Capability"
+    content="Energy Engineer with applied experience in AI, RAG systems and automation"
   />
 </svelte:head>
 
@@ -31,7 +31,7 @@
   <!-- HERO SECTION -->
   <Hero
     title="JIYON P J"
-    subtitle="Energy Engineer with AI and Automation Capability"
+    subtitle="Energy Engineer with applied experience in AI, RAG systems and automation"
     cta={{ label: "Go to Resume", href: "/resume" }}
   />
 

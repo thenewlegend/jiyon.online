@@ -13,8 +13,7 @@ export const RESUME_DATA = {
     primary: "Mechanical Engineer",
     specialization: "Energy Engineering and Management (M.Tech)"
   },
-  profileSummary:
-    "Mechanical Engineer with a Master’s in Energy Engineering and Management and 2 years of industry experience in engineering project coordination within construction environments. Delivered 24+ regulatory submissions with 80% first-pass approval and reduced approval timelines by ~40%. Combines strong engineering fundamentals with hands-on experience in data processing, automation, and AI-driven workflows using Python, MATLAB, and modern LLM-based tools. Seeking to apply analytical and engineering capabilities in a data-driven or mechanical engineering role.",
+ profileSummary: "Energy Engineer with a Master’s in Energy Engineering and Management and 2 years of experience in engineering project coordination. Delivered 24+ regulatory submissions with ~80% first-pass approval and reduced timelines by ~40%. Experienced in data processing, automation and AI system design, including development of a multi-agent RAG-based energy diagnostics platform. Proficient in Python, MATLAB and LLM-based workflows. Seeking roles at the intersection of engineering and data-driven systems.",
   coreCapabilities: [
   {
     category: "Mechanical Engineering Fundamentals",
@@ -103,7 +102,7 @@ export const RESUME_DATA = {
   ],
   projects: [
         {
-      "title": "AITfES — Multi-Agent RAG System for Energy Diagnostics",
+      "title": "AITfES — Multi-Agent RAG System",
       "link": "github.com/thenewlegend/AITfES",
       "details": [
         "Built multi-agent RAG platform using SvelteKit, Gemini, and Pinecone (Vector DB)",

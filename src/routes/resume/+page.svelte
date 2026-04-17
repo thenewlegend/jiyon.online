@@ -167,6 +167,21 @@
         </ResumeSection>
       </Reveal>
 
+            <!-- Selected Projects -->
+      <Reveal>
+        <ResumeSection title="Projects">
+          <Stagger stagger={0.2} class="space-y-12">
+            {#each RESUME_DATA.projects as project}
+              <ResumeItem
+                title={project.title}
+                link={project.link}
+                details={project.details}
+              />
+            {/each}
+          </Stagger>
+        </ResumeSection>
+      </Reveal>
+
       <!-- Professional Experience -->
       <Reveal>
         <ResumeSection id="experience" title="Experience">
@@ -200,20 +215,7 @@
         </ResumeSection>
       </Reveal>
 
-      <!-- Selected Projects -->
-      <Reveal>
-        <ResumeSection title="Projects">
-          <Stagger stagger={0.2} class="space-y-12">
-            {#each RESUME_DATA.projects as project}
-              <ResumeItem
-                title={project.title}
-                link={project.link}
-                details={project.details}
-              />
-            {/each}
-          </Stagger>
-        </ResumeSection>
-      </Reveal>
+
 
       <!-- Additional Information -->
       <Reveal>
