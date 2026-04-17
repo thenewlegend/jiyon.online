@@ -12,25 +12,11 @@
   const resumeOptions = [
     {
       id: 1,
-      title: "Core Mechanical + Energy",
-      desc: "Ideal for heavy industry, design and project management roles.",
+      title: "AI + Energy",
+      desc: "Applied experience in developing RAG-based AI systems, data pipelines, and scalable engineering tools.",
       file: "/Jiyon_Resume_1.pdf",
-      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>`,
-    },
-    {
-      id: 2,
-      title: "Mechanical + AI + Energy",
-      desc: "Tailored for R&D, automation and tech-driven engineering positions.",
-      file: "/Jiyon_Resume_2.pdf",
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m16 4-4 4-4-4"/><path d="M4.34 11.46A9 9 0 1 0 12 21a9 9 0 0 0 7.66-14.26"/><circle cx="12" cy="12" r="3"/></svg>`,
-    },
-    {
-      id: 3,
-      title: "All Data Included",
-      desc: "A comprehensive view of my full career and academic journey.",
-      file: "/Jiyon_Resume_3.pdf",
-      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
-    },
+    }
   ];
 
   $effect(() => {
@@ -57,9 +43,9 @@
 <Modal {isOpen} {onClose}>
   <div class="space-y-8">
     <div class="text-center space-y-2">
-      <Heading level={3} text="CHOOSE ONE" class="text-2xl lg:text-3xl" />
+      <Heading level={3} text="RESUME" class="text-2xl lg:text-3xl" />
       <Text
-        text="Select the profile you'd like to explore."
+        text="-"
         class="text-xs uppercase tracking-widest text-[var(--color-base-muted)]"
       />
     </div>
