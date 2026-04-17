@@ -26,7 +26,7 @@ export const RESUME_DATA = {
   {
     category: "Software Engineering & AI Systems",
     skills: [
-      "Python & Data Processing (Pandas)",
+      "Python & Data Processing",
       "RAG-Based AI Systems & LLM Integration (Gemini API)",
       "Data Pipeline Design & Automation",
       "API Integration & AI Workflow Orchestration",
@@ -108,7 +108,6 @@ export const RESUME_DATA = {
         "Built multi-agent RAG platform using SvelteKit, Gemini, and Pinecone (Vector DB)",
         "Implemented structured diagnostic reasoning with query condensation and vector retrieval",
         "Added multi-model fallback orchestration and real-time streaming for reliability",
-         "Streamed responses via NDJSON with real-time pipeline status",
       "Maintained agent-level isolation across diagnostic and financial workflows",
       "Enabled pipeline introspection (retrieval, prompts, logs) for debugging"
       ]
