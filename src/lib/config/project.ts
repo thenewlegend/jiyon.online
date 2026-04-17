@@ -1,19 +1,24 @@
 export const projects = [
-    {
-        id: "p1",
-        title: "AITfES - AI-Based Energy Systems Troubleshooting Assistant",
-        date: "",
-        context:
-            "Diagnosing issues in complex energy systems typically relies on domain expertise and loosely structured troubleshooting approaches, making the process time-consuming and inconsistent.",
-        solution:
-            "Built an experimental web-based diagnostic chatbot using SvelteKit and the Google Gemini API. Implemented a basic guided questioning flow to emulate structured troubleshooting, focusing on narrowing down potential faults through sequential user inputs.",
-        impact:
-            "Demonstrated the feasibility of structuring diagnostic workflows through a conversational interface. The prototype showed potential to streamline troubleshooting.",
-        tools: ["SvelteKit", "Google Gemini API", "AI Chatbot", "System Diagnostics"],
-        links: [{ label: "AITfES WebApp", url: "https://aitfes.vercel.app/"},
-            { label: "GitHub", url: "https://github.com/thenewlegend/AITfES" }
-        ],
-    },
+            {
+            "id": "p1",
+            "title": "AITfES — Multi-Agent RAG System",
+            "date": "",
+            "context": "Naive LLM chat lacks grounding and control, limiting reliability in technical domains.",
+            "solution": "Built a multi-agent RAG platform using SvelteKit, Gemini, and Pinecone. Implemented a three-phase pipeline (query condensation, vector retrieval, augmented generation), with typed system instructions enforcing structured diagnostic reasoning.",
+            "impact": "Produced a controlled, inspectable AI system with grounded outputs and reproducible reasoning.",
+            "tools": [
+                "SvelteKit",
+                "Vector Database",
+                "Google Gemini API",
+                "Data Embedding",
+                "RAG",
+            ],
+            "links": [
+                { "label": "AITfES WebApp", "url": "https://aitfes.vercel.app/" },
+                { "label": "Woods Assistant", "url": "https://aitfes.vercel.app/woods" },
+                { "label": "GitHub", "url": "https://github.com/thenewlegend/AITfES" }
+            ]
+},
     {
         id: "p2",
         title: "MirrorSafe - Lightweight Folder Backup System",

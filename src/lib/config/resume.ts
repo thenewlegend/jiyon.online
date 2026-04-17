@@ -25,8 +25,17 @@ export const RESUME_DATA = {
     skills: ["Renewable Energy Systems (Solar, Wind, Biomass)", "Hydrogen Systems", "Energy Efficiency Analysis", "Industrial Energy Conservation", "Decarbonization Principles", "ESG Fundamentals"]
   },
   {
-    category: "Software Engineering & AI Workflows",
-    skills: ["Python, MATLAB & Web Stack (HTML, CSS, JS)", "Spec-Driven AI Product Development", "LLM Integration (Gemini API, Vercel AI SDK)", "Version Control (Git/GitHub)", "API Integrations", "Development Environments (VS Code)"]
+    category: "Software Engineering & AI Systems",
+    skills: [
+      "Python & Data Processing (Pandas)",
+      "RAG-Based AI Systems & LLM Integration (Gemini API)",
+      "Data Pipeline Design & Automation",
+      "API Integration & AI Workflow Orchestration",
+      "Semantic Retrieval & Vector Databases (Pinecone)",
+      "Full-Stack Development (SvelteKit, HTML, CSS, JS)",
+      "Version Control (Git/GitHub)",
+      "Applied AI Problem Solving"
+    ]
   },
   {
     category: "Design & Multimedia Production",
@@ -93,12 +102,16 @@ export const RESUME_DATA = {
     }
   ],
   projects: [
-    {
-      title: "AI-Based Energy Systems Troubleshooting Assistant",
-      link: "github.com/thenewlegend/AITfES",
-      details: [
-        "Built web-based diagnostic chatbot using SvelteKit and Google Gemini API",
-        "Designed structured questioning logic for complex system troubleshooting"
+        {
+      "title": "AITfES — Multi-Agent RAG System for Energy Diagnostics",
+      "link": "github.com/thenewlegend/AITfES",
+      "details": [
+        "Built multi-agent RAG platform using SvelteKit, Gemini, and Pinecone (Vector DB)",
+        "Implemented structured diagnostic reasoning with query condensation and vector retrieval",
+        "Added multi-model fallback orchestration and real-time streaming for reliability",
+         "Streamed responses via NDJSON with real-time pipeline status",
+      "Maintained agent-level isolation across diagnostic and financial workflows",
+      "Enabled pipeline introspection (retrieval, prompts, logs) for debugging"
       ]
     },
     {
