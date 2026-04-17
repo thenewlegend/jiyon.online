@@ -5,8 +5,7 @@
   import Text from "../ui/Text.svelte";
   import Button from "../ui/Button.svelte";
   import Reveal from "../motion/Reveal.svelte";
-
-  const url = encodeURIComponent(window.location.href);
+  
 
   let { title, date, excerpt, readTime, children } = $props<{
     title: string;
@@ -71,15 +70,7 @@
           <span
             class="text-[10px] uppercase font-bold tracking-[0.4em] text-[var(--color-base-muted)]"
             >End of Insight</span>
-
-          <Button
-            label="Share on LinkedIn"
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${url}`}
-            target="_blank"
-            variant="secondary"
-            class="mt-4"
-          />
-                  </div>
+      </div>
       </Reveal>
     </div>
   </Container>
