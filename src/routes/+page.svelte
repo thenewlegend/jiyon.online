@@ -58,7 +58,8 @@
           <li>MATLAB / Simulink</li>
           <li>SolidWorks / Fusion 360</li>
           <li>COMSOL Multiphysics</li>         
-          <li>AutoCAD / Excel</li>
+          <li>AutoCAD 2D/3D</li>
+          <li>Microsoft Excel</li>
         </ul>
       </div>      
 
@@ -80,10 +81,12 @@
           Intelligent Systems
         </h4>
         <ul class="text-sm font-medium space-y-2 opacity-80">
-          <li>Scientific Computing (Python/Jupyter)</li>
           <li>Spec-Driven AI Development</li>
           <li>Prompt Optimization & Model Tuning</li>
-          <li>Generative API Integration (Gemini)</li>        
+          <li>AI API Integration (Gemini API)</li>
+          <li>RAG System Design with Vector DB</li>
+          <li></li>
+          <li>Multi-Agent Architecture</li>     
         </ul>
       </div>
 
