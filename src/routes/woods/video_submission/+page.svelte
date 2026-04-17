@@ -15,7 +15,7 @@
   let videoWrapper = $state<HTMLElement | null>(null);
   let textContainer = $state<HTMLElement | null>(null);
 
-  const VIDEO_ID = "dQw4w9WgXcQ";
+  const VIDEO_ID = "_ox6pzecGb0";
   const EMBED_URL = `https://www.youtube-nocookie.com/embed/${VIDEO_ID}?si=BgS6PkTCQgnYM8DU&rel=0&showinfo=0&modestbranding=1`;
 
   function handleLoad() {
@@ -104,7 +104,7 @@
         <span
           class="text-[10px] uppercase font-bold tracking-[0.4em] text-[var(--color-base-light)] opacity-40"
         >
-          MirrorSafe
+          AITfES
         </span>
       </div>
     </Reveal>
@@ -199,12 +199,12 @@
       >
         <div class="space-y-4">
           <Text
-            text="The entire personal website was developed in collaboration with AI tools."
+            text="Explore AITfES — a modular AI system designed to assist engineering workflows using retrieval-augmented generation."
             class="text-xl lg:text-2xl font-light tracking-wide opacity-90"
           />
 
           <Text
-            text="Exploe the blog section for insights into the lessons learned throughout the process."
+            text="Dive into the project and blog to understand the design decisions, system architecture, and lessons learned."
             class="opacity-70 max-w-2xl mx-auto"
           />
         </div>
@@ -212,26 +212,46 @@
 
       <div class="flex flex-wrap justify-center gap-4 pt-4">
         <Button
-          label="View in GDrive"
-          href="https://example.com"
+          label="Direct Video Link"
+          href="/AIfTES.mp4"
           target="_blank"
           variant="secondary"
           class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
         />
+        
         <Button
-          label="Check the Website"
+          label="Open Blog Post"
+          href="/blog/aitfes"
+          target="_blank"
+          variant="secondary"
+          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+        />
+
+        <Button
+          label="Technical Presentation"
+          href="/AITfES.pdf"
+          target="_blank"
+          variant="secondary"
+          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+        />
+
+        <Button
+          label="Github Repository"
+          href="https://github.com/thenewlegend/AITfES"
+          target="_blank"
+          variant="secondary"
+          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
+        />
+
+        <Button
+          label="Personal Website"
           href="https://jiyon.online"
           target="_blank"
           variant="secondary"
           class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
         />
-        <Button
-          label="Open Blog Post"
-          href="https://jiyon.online/blog"
-          target="_blank"
-          variant="secondary"
-          class="rounded-full px-5 py-2 text-xs font-mono tracking-wider bg-white/5 border-[var(--color-base-muted)]/20 cursor-pointer"
-        />
+
+
       </div>
     </Reveal>
   </Container>

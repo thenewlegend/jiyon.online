@@ -1,7 +1,7 @@
 ---
 title: "Hydrogen at Scale: Engineering the Future Energy System"
-date: "Dec 12, 2025"
-readTime: "12 min read"
+date: "March 22, 2025"
+readTime: "7 min read"
 excerpt: "Hydrogen is no longer theoretical. It is a systems-level challenge involving infrastructure, economics, and policy alignment across global energy networks."
 tags: ["Hydrogen", "Energy Systems", "Sustainability"]
 ---

@@ -31,7 +31,7 @@
   <!-- HERO SECTION -->
   <Hero
     title="JIYON P J"
-    subtitle="Mechanical Engineer (Energy) with AI and Automation Capability"
+    subtitle="Energy Engineer with AI and Automation Capability"
     cta={{ label: "Go to Resume", href: "/resume" }}
   />
 
@@ -81,7 +81,6 @@
         </h4>
         <ul class="text-sm font-medium space-y-2 opacity-80">
           <li>Scientific Computing (Python/Jupyter)</li>
-          <li>Full-Stack (HTML/CSS/JS) / SvelteKit</li>
           <li>Spec-Driven AI Development</li>
           <li>Prompt Optimization & Model Tuning</li>
           <li>Generative API Integration (Gemini)</li>        
@@ -94,10 +93,10 @@
         </h4>
         <ul class="text-sm font-medium space-y-2 opacity-80">
           <li>Agile / Scrum Methodologies</li>
+          <li>HTML / CSS / JS / SvelteKit / Supabase</li>
           <li>UI/UX Design (Figma/Google Stitch)</li>
           <li>Graphic Design (Photoshop/Canva)</li>
           <li>Video Production (DaVinci Resolve)</li>
-          <li>Technical Documentation</li>
         </ul>
       </div>
     </Grid>

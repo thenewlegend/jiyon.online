@@ -1,16 +1,16 @@
 export const projects = [
     {
         id: "p1",
-        title: "AI-Based Energy Systems Troubleshooting Assistant",
+        title: "AITfES - AI-Based Energy Systems Troubleshooting Assistant",
         date: "",
         context:
-            "Diagnosing complex energy systems required domain expertise and structured troubleshooting workflows.",
+            "Diagnosing issues in complex energy systems typically relies on domain expertise and loosely structured troubleshooting approaches, making the process time-consuming and inconsistent.",
         solution:
-            "Developed a web-based diagnostic chatbot using SvelteKit and Google Gemini API, implementing guided questioning logic to systematically identify faults.",
+            "Built an experimental web-based diagnostic chatbot using SvelteKit and the Google Gemini API. Implemented a basic guided questioning flow to emulate structured troubleshooting, focusing on narrowing down potential faults through sequential user inputs.",
         impact:
-            "Improved troubleshooting efficiency by structuring diagnostic workflows and reducing reliance on manual expertise.",
+            "Demonstrated the feasibility of structuring diagnostic workflows through a conversational interface. The prototype showed potential to streamline troubleshooting.",
         tools: ["SvelteKit", "Google Gemini API", "AI Chatbot", "System Diagnostics"],
-        links: [{ label: "AIfTES WebApp", url: "https://aitfes.vercel.app/"},
+        links: [{ label: "AITfES WebApp", url: "https://aitfes.vercel.app/"},
             { label: "GitHub", url: "https://github.com/thenewlegend/AITfES" }
         ],
     },
@@ -31,14 +31,14 @@ export const projects = [
     },
     {
         id: "p3",
-        title: "AI Financial Data Query Interface",
+        title: "Alpha Sentience - AI Financial Data Query Interface",
         date: "",
         context:
-            "Extracting meaningful insights from raw financial datasets required manual querying and domain-specific knowledge.",
+            "Extracting insights from financial datasets typically required manual querying and familiarity with financial APIs, creating friction for quick exploratory analysis.",
         solution:
-            "Built a natural language interface leveraging Alpha Vantage MCP integration to enable conversational querying of financial data.",
+            "Developed a prototype natural language interface integrating Alpha Vantage MCP, allowing users to query financial data conversationally. The system translates simple user prompts into API requests and returns structured responses.",
         impact:
-            "Enabled intuitive access to structured financial insights, significantly reducing analysis time.",
+            "Demonstrated that a conversational interface can lower the barrier to accessing financial data for simple queries. Although limited in scope and not production-ready, the prototype reduced friction in ad hoc exploration.",
         tools: ["Python", "Alpha Vantage API", "MCP", "NLP Interface"],
         links: [
             { label: "GitHub", url: "https://github.com/thenewlegend/AlphaSentience" }
