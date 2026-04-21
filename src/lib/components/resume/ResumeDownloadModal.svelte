@@ -12,9 +12,9 @@
   const resumeOptions = [
     {
       id: 1,
-      title: "AI + Energy",
-      desc: "Applied experience in developing RAG-based AI systems, data pipelines, and scalable engineering tools.",
-      file: "/Jiyon_Resume_1.pdf",
+      title: "ENERGY ENGINEER | AI FOR ENERGY SYSTEMS",
+      desc: "Energy Engineer with applied experience in developing RAG-based AI systems, data pipelines and scalable engineering tools.",
+      file: "/JIYON P J _ Resume.pdf",
       icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="m16 4-4 4-4-4"/><path d="M4.34 11.46A9 9 0 1 0 12 21a9 9 0 0 0 7.66-14.26"/><circle cx="12" cy="12" r="3"/></svg>`,
     }
   ];
