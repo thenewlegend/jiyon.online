@@ -1,37 +1,82 @@
-```yaml
-project:
-  name: "JIYON P J Portfolio"
-  description: "Primary professional portfolio & resume for JIYON P J — Mechanical Engineer specializing in AI and automation."
-  repository: "https://github.com/thenewlegend/jiyon.online"
+# 👋 Jiyon P J
 
-tech_stack:
-  framework: "SvelteKit"
-  language: "TypeScript"
-  styling: "Tailwind CSS"
-  animations: "GSAP (Core, ScrollTrigger)"
-  build_target: "Static Site Generation (SSG) / Adapter Auto"
+`Mechanical Engineer → Energy Systems → AI/Software Builder`
 
-architecture:
-  pattern: "Component-driven Declarative UI"
-  state_management: "Props / Svelte Reactivity"
-  directories:
-    src/lib/components:
-      layout: "Structural grids and sections"
-      ui: "Atomic elements (Buttons, Headings)"
-      sections: "Page composite segments (Hero, Experience, Blog)"
-      motion: "GSAP wrappers (Reveal, Stagger)"
-      resume: "Dedicated layout structures for the resume page"
-    src/lib/config: "Headless data stores (experience, projects, resume data)"
-    src/routes: "SvelteKit file-based routes (+page.svelte)"
+I build systems where **engineering meets code** — mainly around
+**LLMs, data pipelines, and applied problem-solving**.
 
-design_philosophy:
-  theme: "Engineering aesthetic (High-contrast Dark Mode)"
-  responsiveness: "Mobile-first approach"
-  motion: "Determinisitc, scroll-driven reveal micro-interactions"
-  maintainability: "Data cleanly separated from presentation logic"
+---
 
-scripts:
-  development: "npm run dev"
-  build: "npm run build"
-  preview: "npm run preview"
-```
+## ⚙️ Focus Areas
+
+* AI Systems (RAG, multi-agent workflows, LLM pipelines)
+* Data processing & automation
+* Engineering-driven problem solving (energy, simulation, analysis)
+
+---
+
+## 🚀 Projects
+
+**AITfES — Multi-Agent RAG System**
+SvelteKit + Gemini + Pinecone
+→ Multi-agent orchestration, retrieval pipelines, fallback handling
+
+[https://github.com/thenewlegend/AITfES](https://github.com/thenewlegend/AITfES)
+
+---
+
+**MirrorSafe — Backup System**
+Python + PySide6
+→ Incremental backups, multi-threaded sync, scheduled jobs
+
+[https://github.com/thenewlegend/mirrorsafe](https://github.com/thenewlegend/mirrorsafe)
+
+---
+
+**AI Financial Query Interface**
+Python + LLM workflows
+→ Natural language → structured financial data queries
+
+[https://github.com/thenewlegend/AlphaSentience](https://github.com/thenewlegend/AlphaSentience)
+
+---
+
+**Excel Index Builder**
+Python
+→ Auto-generates navigable Excel indexes from directories
+
+[https://github.com/thenewlegend/Excel-Master-Sheet-Builder](https://github.com/thenewlegend/Excel-Master-Sheet-Builder)
+
+---
+
+## 🧰 Stack
+
+**Core**
+
+* Python, MATLAB
+
+**AI / Data**
+
+* LLM pipelines, RAG, vector DBs
+
+**Frameworks & Tools**
+
+* SvelteKit, PySide6
+* COMSOL, AutoCAD
+
+---
+
+## 🎯 Direction
+
+Interested in:
+
+* Applied AI systems (beyond demos)
+* Data-heavy engineering workflows
+* Automation at scale
+
+---
+
+## 📬 Contact
+
+* Email: [jiyonpj2501@gmail.com](mailto:jiyonpj2501@gmail.com)
+* LinkedIn: [https://linkedin.com/in/jiyon](https://linkedin.com/in/jiyon)
